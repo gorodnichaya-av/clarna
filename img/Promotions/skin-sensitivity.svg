@@ -1,0 +1,45 @@
+<svg id="Group_1283" data-name="Group 1283" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="143.478" height="149.329" viewBox="0 0 143.478 149.329">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_632" data-name="Rectangle 632" width="143.478" height="149.329" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1280" data-name="Group 1280">
+    <g id="Group_1279" data-name="Group 1279" clip-path="url(#clip-path)">
+      <path id="Path_1452" data-name="Path 1452" d="M71.739,5.639A71.738,71.738,0,1,1,21.012,26.651,71.518,71.518,0,0,1,71.739,5.639" transform="translate(0 -0.024)" fill="#006837"/>
+      <path id="Path_1453" data-name="Path 1453" d="M122.64,68.133l2.645.2-1.73-2.01.969-.833,1.73,2.01.2-2.645,1.275.1-.2,2.646,2.01-1.731.833.969-2.01,1.73,2.645.2-.1,1.275-2.645-.2L130,71.848l-.969.833L127.3,70.67l-.2,2.645-1.274-.1.2-2.645-2.01,1.73-.833-.968,2.01-1.731-2.645-.2Z" transform="translate(-0.519 -0.275)" fill="#fff"/>
+      <path id="Path_1454" data-name="Path 1454" d="M13.974,68.133l2.645.2-1.73-2.01.969-.833,1.73,2.01.2-2.645,1.275.1-.2,2.646,2.01-1.731.833.969-2.01,1.73,2.645.2-.1,1.275-2.645-.2,1.73,2.011-.969.833-1.73-2.011-.2,2.645-1.274-.1.2-2.645-2.01,1.73-.833-.968,2.01-1.731-2.645-.2Z" transform="translate(-0.059 -0.275)" fill="#fff"/>
+      <path id="Path_1455" data-name="Path 1455" d="M32.772,118.781l2.645.2-1.73-2.01.969-.833,1.73,2.01.2-2.645,1.275.1-.2,2.646,2.01-1.731.833.969-2.01,1.73,2.645.2-.1,1.275-2.645-.2,1.73,2.011-.969.833-1.73-2.011-.2,2.645-1.274-.1.2-2.645-2.01,1.73-.833-.968,2.01-1.731-2.645-.2Z" transform="translate(-0.138 -0.489)" fill="#fff"/>
+      <path id="Path_1456" data-name="Path 1456" d="M101.428,118.781l2.645.2-1.73-2.01.969-.833,1.73,2.01.2-2.645,1.275.1-.2,2.646,2.01-1.731.833.969-2.01,1.73,2.645.2-.1,1.275-2.645-.2,1.73,2.011-.969.833-1.73-2.011-.2,2.645-1.274-.1.2-2.645-2.01,1.73-.833-.968,2.01-1.731-2.645-.2Z" transform="translate(-0.429 -0.489)" fill="#fff"/>
+    </g>
+  </g>
+  <text id="S" transform="matrix(0.419, -0.908, 0.908, 0.419, 23.329, 60.488)" fill="#fff" font-size="11" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">S</tspan></text>
+  <text id="K" transform="matrix(0.576, -0.817, 0.817, 0.576, 27.077, 52.495)" fill="#fff" font-size="11" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">K</tspan></text>
+  <text id="I" transform="translate(32.353 43.761) rotate(-46.408)" fill="#fff" font-size="10" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">I</tspan></text>
+  <text id="N" transform="translate(36.521 40.648) rotate(-37.598)" fill="#fff" font-size="11" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">N</tspan></text>
+  <text id="_" data-name=" " transform="matrix(0.874, -0.487, 0.487, 0.874, 43.851, 31.664)" fill="#fff" font-size="8" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0"> </tspan></text>
+  <text id="S-2" data-name="S" transform="translate(49.3 31.997) rotate(-21.774)" fill="#fff" font-size="11" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">S</tspan></text>
+  <text id="E" transform="translate(57.504 28.81) rotate(-11.914)" fill="#fff" font-size="11" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">E</tspan></text>
+  <text id="N-2" data-name="N" transform="matrix(1, -0.015, 0.015, 1, 66.526, 26.943)" fill="#fff" font-size="11" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">N</tspan></text>
+  <text id="S-3" data-name="S" transform="translate(77.333 26.987) rotate(9.997)" fill="#fff" font-size="11" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">S</tspan></text>
+  <text id="I-2" data-name="I" transform="translate(86.294 27.769) rotate(17.669)" fill="#fff" font-size="10" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">I</tspan></text>
+  <text id="T" transform="translate(91.348 29.355) rotate(25.151)" fill="#fff" font-size="10" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">T</tspan></text>
+  <text id="I-3" data-name="I" transform="matrix(0.841, 0.541, -0.541, 0.841, 99.163, 33.248)" fill="#fff" font-size="10" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">I</tspan></text>
+  <text id="V" transform="matrix(0.753, 0.657, -0.657, 0.753, 102.947, 36.75)" fill="#fff" font-size="11" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">V</tspan></text>
+  <text id="I-4" data-name="I" transform="translate(111.026 42.824) rotate(49.35)" fill="#fff" font-size="10" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">I</tspan></text>
+  <text id="T-2" data-name="T" transform="matrix(0.546, 0.838, -0.838, 0.546, 114.477, 46.804)" fill="#fff" font-size="10" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">T</tspan></text>
+  <text id="Y" transform="translate(119.1 54.025) rotate(66.476)" fill="#fff" font-size="10" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">Y</tspan></text>
+  <text id="T-3" data-name="T" transform="translate(44.25 127.81) rotate(25.662)" fill="#fff" font-size="10" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">T</tspan></text>
+  <text id="E-2" data-name="E" transform="translate(52.425 132.674) rotate(15.835)" fill="#fff" font-size="11" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">E</tspan></text>
+  <text id="S-4" data-name="S" transform="translate(62.163 135.239) rotate(5.968)" fill="#fff" font-size="11" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">S</tspan></text>
+  <text id="T-4" data-name="T" transform="translate(71.627 135.064) rotate(-3.615)" fill="#fff" font-size="10" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">T</tspan></text>
+  <text id="E-3" data-name="E" transform="translate(81.115 135.313) rotate(-13.521)" fill="#fff" font-size="11" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">E</tspan></text>
+  <text id="D" transform="translate(90.988 132.813) rotate(-24.692)" fill="#fff" font-size="11" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">D</tspan></text>
+  <g id="Group_1282" data-name="Group 1282">
+    <g id="Group_1281" data-name="Group 1281" clip-path="url(#clip-path)">
+      <path id="Path_1457" data-name="Path 1457" d="M55.107,112.789l1.422-.415c1-.866.783-.383.842-2.087A93.761,93.761,0,0,1,59.64,93.222c2.2-8.319,2.709-8.507,5.328-15.2.309-.788.707-1.339,1.07-2.076A60.172,60.172,0,0,1,76.39,60.817c3.467-3.682,10.254-10.6,16.657-11.609C86.829,52.188,79.39,59.2,75.065,64.421c-1.8,2.17-2.971,4.151-4.4,6.233l-5,9.813c-.472,1.141-.972,2.391-1.387,3.564C63,87.653,60.6,95.21,60.134,98.867l4.7-.5c-.067-.072-.187-.184-.2-.127s-.149-.07-.193-.087l-1.072-.316,7.162-3.5c-2.332-.268-4.925.544-6.1.372l-.924-.343c5-1.816,10.53-4.216,14.4-7.608,1.358-1.191,2.435-2.5,3.55-3.441l-1.125-.066c-.354.026-.952.145-1.309.2a3.773,3.773,0,0,1-2.55-.114c3.18-1.786,6.077-5.261,8.1-7.738l6.372-8.966C87.23,68.169,78.6,72.475,74.96,71.09c6.1-1.9,10.508-2.738,15.147-6.664,8.363-7.081,8.936-20.82-3.8-19.853-4.562.347-7.136,2.233-8.706,6.007-.461,1.108-1.014,1.96-1.4,3,.024-2,1.429-5.368,1.23-7.158l-.108.032c-2.554,2.73-5.99,3.8-7.878,9.739A36.539,36.539,0,0,0,68.1,62.463c-.2,1.517-.965,5.145-.948,6.23-.916-2.7-.19-7.1-.248-9.615a24.474,24.474,0,0,0-8.932,12.857,32.37,32.37,0,0,0-1.293,8.14c-.137,4.051.231,4.839.6,8.158a5.735,5.735,0,0,1,.04.683l-.03.433c-1.5-4.238-1.357-7.792-1.793-11.8a18.405,18.405,0,0,0-2.419,6.513,15.692,15.692,0,0,0,1.3,8.524l-1.745-.121,1.647,2.881-2.469-.331a24.9,24.9,0,0,0,3.3,3.535c2.572,2.565-1.263,7.183-.007,14.239" transform="translate(-0.219 -0.188)" fill="#fff" fill-rule="evenodd"/>
+      <path id="Path_1458" data-name="Path 1458" d="M71.768,12.593a64.816,64.816,0,1,1-45.83,18.984,64.611,64.611,0,0,1,45.83-18.984m44.264,20.551a62.6,62.6,0,1,0,18.335,44.264,62.4,62.4,0,0,0-18.335-44.264" transform="translate(-0.029 -0.053)" fill="#fff"/>
+      <path id="Path_1459" data-name="Path 1459" d="M71.848,31.367a46.12,46.12,0,1,1-46.12,46.12,46.119,46.119,0,0,1,46.12-46.12m0,2.017a44.1,44.1,0,1,1-44.1,44.1,44.1,44.1,0,0,1,44.1-44.1" transform="translate(-0.109 -0.133)" fill="#fff" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>
