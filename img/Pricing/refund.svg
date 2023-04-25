@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.684" height="26.461" viewBox="0 0 20.684 26.461">
+  <g id="Group_1216" data-name="Group 1216" transform="translate(-344.306 -24109.918)">
+    <g id="Group_1215" data-name="Group 1215" transform="translate(345.556 24111.256)">
+      <g id="Group_832" data-name="Group 832" transform="translate(0 0)">
+        <g id="insurance" transform="translate(0 0)">
+          <g id="Group_211" data-name="Group 211" transform="translate(0 0)">
+            <g id="Group_210" data-name="Group 210">
+              <path id="Path_476" data-name="Path 476" d="M78.485,3.806C74.614,3.806,70.6.218,70.562.182a.7.7,0,0,0-.94,0c-.04.036-4.041,3.624-7.923,3.624a.7.7,0,0,0-.7.7v8.376c0,6.785,5.047,9.5,8.843,10.946a.7.7,0,0,0,.5,0c5.323-2.032,8.843-5.2,8.843-10.946V4.505A.7.7,0,0,0,78.485,3.806Z" transform="translate(-61 0)" fill="#101010" stroke="#101010" stroke-width="2.5"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <path id="Icon_ionic-ios-checkmark" data-name="Icon ionic-ios-checkmark" d="M21.637,13.216l-.921-.947a.2.2,0,0,0-.146-.063h0a.19.19,0,0,0-.146.063L14.043,18.7l-2.322-2.322a.2.2,0,0,0-.293,0l-.931.931a.208.208,0,0,0,0,.3l2.929,2.929a.926.926,0,0,0,.612.3.971.971,0,0,0,.607-.288h.005l6.993-7.029A.224.224,0,0,0,21.637,13.216Z" transform="translate(338.582 24107.24)" fill="#fff" stroke="#fff" stroke-width="0.5"/>
+  </g>
+</svg>
