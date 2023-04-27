@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85.683" height="85.992" viewBox="0 0 85.683 85.992">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_557" data-name="Rectangle 557" width="69.175" height="69.175" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_2083" data-name="Group 2083" transform="translate(-28.066 16.538)">
+    <g id="Group_1174" data-name="Group 1174" transform="translate(28.066 -16.538)">
+      <text id="_12-1-6600007226" data-name="12-1-6600007226" transform="translate(18.05 75.992)" fill="#33358a" font-size="6" font-family="IBMPlexSansThai-Medium, IBM Plex Sans Thai" font-weight="500"><tspan x="5" y="6">12-1-6600007226</tspan></text>
+      <g id="Group_1079" data-name="Group 1079" transform="translate(0 0)">
+        <g id="Group_1078" data-name="Group 1078" transform="translate(8.254)">
+          <g id="Group_1077" data-name="Group 1077" clip-path="url(#clip-path)">
+            <path id="Path_1365" data-name="Path 1365" d="M34.587,0A34.587,34.587,0,1,0,69.175,34.588,34.587,34.587,0,0,0,34.587,0m0,65.1a30.531,30.531,0,0,1-30.256-34.5h21.11V51.026l-7.9-8.881H21V38H8.782l3.688,4.148,12.412,13.96,2.537,2.854,2.537-2.854L56.316,26.458H51.241L29.589,50.812V42.145h4.906V38H29.589v-7.39h4.906V26.458H5.169A30.518,30.518,0,1,1,34.587,65.1" transform="translate(0 -0.001)" fill="#33358a"/>
+          </g>
+        </g>
+        <path id="Path_1366" data-name="Path 1366" d="M18.718.764H83.852l-8.881,9.364H9.837ZM18.335,0,17.65.721,9.656,9.151V4.783h2.852V4.019H9.656V.764H12.98V0H0V.764H8.892V9.193L4.583,4.648H6.624V3.885H2.751l.724.763L8.7,10.158l.192.2.362.382.141.149H75.355l.724-.764L84.959.764,85.683,0Z" transform="translate(0 74.601)" fill="#33358a"/>
+      </g>
+    </g>
+  </g>
+</svg>

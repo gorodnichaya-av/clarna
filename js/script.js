@@ -49,5 +49,11 @@ $(function () {
         parent.addClass('opened').find('.js-accordion-content').slideDown();
       }
     });
+
+    // Progress bar
+    $('.js-progress-parent').each(function(){
+      let progressVal = $(this).find('.js-progress-val').text();
+      $(this).find('.js-progress').width(progressVal);
+    });
   })
 })
