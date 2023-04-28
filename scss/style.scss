@@ -68,6 +68,7 @@ $white: #fff;
 }
 
 body {
+  overflow-x: hidden;
   color: #101010;
   font-family: "IBMPlexSansThai-Medium", sans-serif;
 }
@@ -88,10 +89,6 @@ body {
 }
 
 /***** general / steps-headline *****/
-
-.wrap {
-  overflow-x: hidden;
-}
 
 .container {
   max-width: 1680px;
@@ -954,11 +951,6 @@ h4 {
 /***** banner ******/
 .banner {
   background-color: #FFDFE2;
-  &__slider {
-    &-general {
-      overflow: hidden;
-    }
-  }
   &__info {
     position: relative;
     display: flex;
@@ -984,6 +976,74 @@ h4 {
       z-index: 2;
     }
   }
+  &__slide {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    padding-top: 113%;
+    img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      max-width: unset;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__slider {
+    &-nav {
+      display: flex;
+      justify-content: center;
+      margin-top: 12px;
+      gap: 12px;
+      &-item {
+        flex: 1;
+        opacity: 0.53;
+        border: 3px solid transparent;
+        background-color: #E4E4E4;
+        transition: 0.3s all;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &.active {
+          opacity: 1;
+          border-color: $pink;
+          background-color: transparent;
+        }
+      }
+    }
+    .slick-slide {
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .slick-arrow {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 20%;
+      z-index: 2;
+      text-indent: -999999px;
+      overflow: hidden;
+      background: url(../img/Icons/slider-arrow.svg) no-repeat 50% 50%;
+      border: none;
+      cursor: pointer;
+      &.slick-prev {
+        left: 0;
+        transform: scaleX(-1);
+      }
+      &.slick-next {
+        right: 0;
+      }
+    }
+  }
   &__woman {
     max-width: unset;
     &-wrap {
@@ -991,19 +1051,27 @@ h4 {
       height: 100%;
     }
   }
+  &__womans {
+    position: relative;
+    max-width: unset;
+    z-index: 2;
+  }
   &__roses {
     position: absolute;
     left: 50%;
     max-width: unset;
     transform: translateX(-50%);
+    z-index: 2;
   }
   &__clarna {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 2;
   }
   &__days {
     position: absolute;
+    z-index: 2;
   }
   .container {
     position: relative;
@@ -1042,6 +1110,11 @@ h4 {
       margin-left: -20px;
       margin-right: -20px;
     }
+    &__slider {
+      margin-top: 27px;
+      margin-bottom: 35px;
+    }
+    
     h1 {
       text-align: center;
     }
@@ -1064,18 +1137,6 @@ h4 {
     }
   }
 }
-@media (max-width: 991px) {
-  .banner {
-    &__slider {
-      &-general {
-        max-height: calc(100vw - 40px);
-      }
-    }
-    .slick-dots {
-      margin-bottom: 20px;
-    }
-  }
-}
 @media (max-width: 767px) {
   .banner {
     padding-top: 27px;
@@ -1093,7 +1154,14 @@ h4 {
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 100px;
+        &--collage {
+          margin-top: 20px;
+          padding-bottom: 150px;
+        }
       }
+    }
+    &__womans {
+      width: 100%;
     }
     &__roses {
       width: 520px;
@@ -1112,12 +1180,9 @@ h4 {
     &__slider {
       margin-left: -20px;
       margin-right: -20px;
-      img {
-        width: 100%;
-      }
-      .slick-slide {
-        padding-left: 10px;
-        padding-right: 10px;
+      &-nav {
+        padding-left: 5px;
+        padding-right: 5px;
       }
     }
     &__info {
@@ -1147,56 +1212,12 @@ h4 {
 }
 @media (min-width: 768px) {
   .banner {
-    &__slider {
-      &-nav {
-        display: flex;
-        justify-content: center;
-        margin-top: 24px;
-        margin-left: -12px;
-        margin-right: -12px;
-        &-item {
-          flex: 1;
-          padding-left: 12px;
-          padding-right: 12px;
-        }
-      }
-    }
     &__list {
       margin-bottom: 30px;
     }
     &__info {
       img {
         width: 155px;
-      }
-    }
-  }
-}
-@media (min-width: 992px) {
-  .banner {
-    &__slider {
-      max-width: 42%;
-      &-general {
-        max-height: 689px;
-        .slick-arrow {
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          width: 33%;
-          z-index: 2;
-          text-indent: -999999px;
-          overflow: hidden;
-          opacity: 0;
-          cursor: pointer;
-          &.slick-prev {
-            left: 0;
-          }
-          &.slick-next {
-            right: 0;
-          }
-        }
-      }
-      &-nav-item {
-        cursor: pointer;
       }
     }
   }
@@ -1211,7 +1232,15 @@ h4 {
       &-wrap {
         z-index: 2;
         padding-bottom: 200px;
+        &--collage {
+          margin-top: 20px;
+          padding-bottom: 315px;
+        }
       }
+    }
+    &__womans {
+      width: calc(100% + 40px);
+      left: -20px;
     }
     &__roses {
       width: 1032px;
@@ -1258,7 +1287,7 @@ h4 {
       img {
         margin-top: -28px;
         margin-bottom: -34px;
-        margin-left: -16px;
+        margin-left: -36px;
         margin-right: 20px;
       }
     }
@@ -1270,6 +1299,9 @@ h4 {
         display: flex;
         align-items: flex-end;
         padding-bottom: 200px;
+        &--collage {
+          padding-bottom: 300px;
+        }
       }
     }
     &__roses {
@@ -1285,6 +1317,9 @@ h4 {
     }
     &__info {
       font-size: 24px;
+    }
+    &__slider {
+      padding-right: 57px;
     }
     .col {
       flex: 1;
@@ -1309,30 +1344,43 @@ h4 {
       &:before {
         width: 33px;
         height: 44px;
+        margin-right: 20px;
+      }
+      & + li {
+        margin-top: 16px;
       }
     }
   }
 }
-
 @media (min-width: 1280px) and (max-width: 1559px) {
   .banner {
     &__days {
       width: 150px;
     }
+    &__womans {
+      width: 100%;
+    }
   }
 }
-
 @media (min-width: 1560px) {
   .banner {
     &__woman {
+      width: 1112px;
       margin-right: -160px;
       &-wrap {
-        padding-bottom: 200px;
+        padding-bottom: 210px;
+        &--collage {
+          padding-bottom: 250px;
+        }
       }
     }
+    &__womans {
+      width: 939px;
+      left: -45px;
+      top: -50px;
+    }
     &__roses {
-      margin-left: -15px;
-      margin-right: -15px;
+      width: 1200px;
       bottom: -210px;
     }
     &__clarna {
@@ -1340,15 +1388,19 @@ h4 {
     }
     &__days {
       right: 90px;
-      bottom: 180px;
+      bottom: 135px;
+    }
+    &__info {
+      padding-right: 10px;
     }
   }
   .check-list {
     font-size: 32px;
+    padding-right: 30px;
   }
 }
 
-/***** inline *****/
+/***** inline / promotion *****/
 .inline {
   display: flex;
   justify-content: space-around;
@@ -1388,7 +1440,15 @@ h4 {
   }
 
   .promotion {
-    padding-top: 26px;                             
+    padding-top: 26px;
+    .inline {
+      &__item {
+        width: calc(50% - 10px);
+        img {
+          height: 97px;
+        }
+      }
+    }                             
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -1419,6 +1479,95 @@ h4 {
   }
   .promotion {
     margin-top: 59px;
+  }
+}
+
+/***** slick slider ******/
+.slick-slider {
+  .slick-dots {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    li {
+      list-style-type: none;
+      &.slick-active {
+        button {
+          background-color: $pink;
+        }
+      }
+    }
+    button {
+      overflow: hidden;
+      width: 21px;
+      height: 21px;
+      border-radius: 50%;
+      text-indent: -99999px;
+      background-color: #E4E4E4;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.ingredients-slider,
+.testimonials-slider {
+  .slick-track {
+    display: flex;
+  }
+  .slick-slide {
+    height: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 16px;
+    .card {
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .testimonials-slider {
+    .testimonial {
+      width: 350px;
+    }
+  }
+  .ingredients-slider {
+    .card {
+      width: 460px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .slick-slider {
+    .slick-dots {
+      gap: 8px;
+      button {
+        width: 11px;
+        height: 11px;
+      }
+    }
+  }
+
+  .testimonials-slider,
+  .ingredients-slider {
+    .card {
+      width: 300px;
+    }
+  }
+}
+@media (min-width: 992px) and (max-width: 1279px) {
+  .testimonials-slider {
+    .testimonial {
+      width: 403px;
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .testimonials-slider {
+    .testimonial {
+      width: 450px;
+    }
   }
 }
 
@@ -1607,6 +1756,9 @@ h4 {
 
 /***** ingredients-slider *****/
 .ingredients-slider {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
   p:not(.text-blue) {
     font-family: "IBMPlexSansThai-Regular", sans-serif;
   }
