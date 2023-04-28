@@ -72,11 +72,11 @@
     </header>
 
     <div class="wrap">
-      <div class="banner bg-light-pink">
+      <div class="banner">
         <div class="container">
           <div class="row row--desktop-reverse">
             <div class="desktop-hidden tablet-text-center text-pink">
-              <div class="rating rating--text">
+              <div class="banner__pre-headine text-pink">
                 พัฒนาและวิจัยสูตรโดยแพทย์ผิวหนังจากสถาบันชั้นนำ
               </div><!-- /.rating -->
               <h1>
@@ -92,10 +92,11 @@
                 <img class="banner__days" src="img/Banner/30days.png" alt="">
               </div>
             </div>
+
             <div class="col">
               <div class="banner__text">
-                <div class="tablet-hidden">
-                  <div class="rating rating--text">
+                <div class="desktop-visible">
+                  <div class="banner__pre-headine text-pink">
                     พัฒนาและวิจัยสูตรโดยแพทย์ผิวหนังจากสถาบันชั้นนำ
                   </div><!-- /.rating -->
                   <h1>
@@ -103,7 +104,7 @@
                   </h1>
                 </div>
                 <div class="banner__info">
-                  <img src="img/proven.svg" alt="">
+                  <img src="img/Banner/rose-placenta.svg" alt="">
                   <p>
                     ผลิตจาก Rose Planceta สารสกัดสเต็มเซลล์ธรรมชาติจาก Damask Rose ทรงพลังจนเรียกได้ว่านี่คือการ <span class="text-pink">“การปฏิวัติวงการ มาส์กบำรุงผิว”</span>
                   </p>
@@ -134,48 +135,39 @@
 
       <div class="promotion">
         <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class="promotion__item">
+          <div class="inline">
+              <div class="inline__item">
                 <div class="promotion__icon">
                   <img src="img/Promotions/dermatologist.svg" alt="ผ่านการทดสอบจากแพทย์ผิวหนัง">
                 </div>
                 <p class="text-sm">
                   ผ่านการทดสอบจากแพทย์ผิวหนัง
                 </p>
-              </div><!-- /.promotion__item -->
-            </div>
-            <div class="col">
-              <div class="promotion__item">
+              </div>
+              <div class="inline__item">
                 <div class="promotion__icon">
                   <img src="img/Promotions/skin-sensitivity.svg" alt="อ่อนโยนต่อทุกสภาพผิวรวมทั้งผิวแพ้ง่าย">
                 </div>
                 <p class="text-sm">
                   อ่อนโยนต่อทุกสภาพผิวรวมทั้งผิวแพ้ง่าย
                 </p>
-              </div><!-- /.promotion__item -->
-            </div>
-            <div class="col">
-              <div class="promotion__item">
+              </div>
+              <div class="inline__item">
                 <div class="promotion__icon">
                   <img src="img/Promotions/no-harsh-chemicals.svg" alt="ปราศจากสารเคมีที่เป็นอันตราย">
                 </div>
                 <p class="text-sm">
                   ปราศจากสารเคมีที่เป็นอันตราย
                 </p>
-              </div><!-- /.promotion__item -->
-            </div>
-            <div class="col">
-              <div class="promotion__item">
+              </div>
+              <div class="inline__item">
                 <div class="promotion__icon promotion__icon--small">
                   <img src="img/Promotions/approved.svg" alt="ขึ้นทะเบียนกับองค์การอาหารและยา (อย.)">
-                  <img src="img/Promotions/approved-text.svg" alt="">
                 </div>
                 <p class="text-sm">
                   ขึ้นทะเบียนกับองค์การอาหารและยา (อย.)
                 </p>
-              </div><!-- /.promotion__item -->
-            </div> 
+              </div>
           </div>
         </div><!-- /.container -->
       </div><!-- /.promotion -->
@@ -1484,7 +1476,7 @@
               รีบเลย - ก่อนสินค้าจะหมด
             </h2>
             <div class="inventory">
-              จำนวนสินค้าที่มีอยู่: <span class="text-red">สินค้าเหลือน้อย</span>
+              <span>จำนวนสินค้าที่มีอยู่: <span class="text-red">สินค้าเหลือน้อย</span></span>
               <div class="inventory__group">
                 <span class="full"></span>
                 <span></span>
@@ -1495,13 +1487,13 @@
   
             <div class="buttons-group">
               <div>
-                <a href="#" class="btn btn--pink-white">สั่งซื้อแบบครั้งเดียว</a>
+                <a href="#" class="btn btn--pink-white active">สั่งซื้อแบบครั้งเดียว</a>
               </div>
               <div>
-                <a href="#" class="btn btn--transparent-pink">สั่งซื้อแบบสมาชิก ลด 10 %</a>
-                <div>
+                <a href="#" class="btn btn--pink-white">สั่งซื้อแบบสมาชิก ลด 10 %</a>
+                <div class="pricing-payment js-pricing-payment">
                   <p>รับเฉพาะบัตรเดบิตหรือเครดิต</p>
-                  <div>
+                  <div class="pricing-payment__cards">
                     <div><img src="img/Pricing/masterCard.svg" alt=""></div>
                     <div><img src="img/Pricing/visa.svg" alt=""></div>
                     <div><img src="img/Pricing/amex.svg" alt=""></div>
