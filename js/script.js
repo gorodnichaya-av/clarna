@@ -5,9 +5,11 @@ $(function () {
       if ($(this).hasClass('opened')) {
         $(this).removeClass('opened');
         $('.js-menu').slideUp();
+        $('.js-sticky-btn').fadeIn();
       } else {
         $(this).addClass('opened');
         $('.js-menu').slideDown();
+        $('.js-sticky-btn').fadeOut();
       }
     });
 
@@ -107,6 +109,69 @@ $(function () {
       ]
     });
 
+    // Add the same height for list in pricing
+    function addHeightPticingList() {
+      let heightArray = [];
+      function getMaxOfArray(numArray) {
+          return Math.max.apply(null, numArray);
+      }
+      $('.js-pricing-count').each(function() {
+        heightArray.push($(this).outerHeight(true));
+      });
+      maxHeight = getMaxOfArray(heightArray);
+      $('.js-pricing-count').each(function() {
+          $(this).css({
+            'min-height': `${maxHeight}px`
+          });
+      });
+    }
+
+    addHeightPticingList();
+
+    // Premium scare height
+    function addPremiumScareHeight() {
+      const premiumScareHeight = $('.js-premium-scare-height').outerHeight(true),
+          premiumScareBlock = $('.js-premium-scare');
+
+      premiumScareBlock.css({
+        'min-height':  premiumScareHeight
+      });
+    }
+
+    addPremiumScareHeight();
+
+    $(window).resize(function() {
+      addHeightPticingList();
+      addPremiumScareHeight();
+    });
+
+    // Payment discount
+    dollarUSLocale = Intl.NumberFormat('en-US')
+    $('.js-pricing-total').each(function() {
+      let totalVal = $(this).html();
+          totalVal = dollarUSLocale.format(totalVal);
+
+      $(this).html(`${totalVal}.-`);
+    });
+    
+    $('.js-pricing-btn').on('click', function(e) {
+      e.preventDefault();
+
+      let dataPayment = $(this).attr('data-payment');
+      if(dataPayment) {
+        $('.js-pricing-payment, .js-pricing-hidden-text').show(0);
+      } else {
+        $('.js-pricing-payment, .js-pricing-hidden-text').hide(0);
+      }
+
+      $('.js-pricing-total').each(function() {
+        let newTotalVal = ($(this).html()).match(/\d+/g).join("");
+        newTotalVal = dollarUSLocale.format(newTotalVal*0.9);
+
+        $(this).html(`${newTotalVal}.-`);
+      });
+
+    });
 
     // Accordion
     $('.js-accordion').on('click', '.js-accordion-btn', function(){
@@ -124,5 +189,27 @@ $(function () {
       let progressVal = $(this).find('.js-progress-val').text();
       $(this).find('.js-progress').width(progressVal);
     });
+
+    // Modal 
+    $('.js-modal-btn').on('click', function(e) {
+      e.preventDefault();
+      const dataId = $(this).attr('data-modal');
+      $(dataId).fadeIn();
+      $('body').css({
+        'overflow': 'hidden'
+      })
+    });
+    $('.js-modal-close').on('click', function(e) {
+      $(this).closest('.js-modal').fadeOut();
+      $('body').css({
+        'overflow': ' '
+      });
+    });
+    $(document).on('click',function(e){
+      if(!(($(e.target).closest('.js-modal-content').length > 0 ) || ($(e.target).closest(".js-modal-btn").length > 0))){
+        $(".js-modal").fadeOut();
+       }
+    });
+
   })
 })
