@@ -77,14 +77,14 @@ body {
     font-size: 13px;
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   body {
     font-size: 18px;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1281px) {
   body {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
@@ -100,7 +100,7 @@ body {
 
 .headline-wrap {
   position: relative;
-  max-width: 1244px;
+  max-width: 1110px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -162,8 +162,8 @@ img {
 
 @media (max-width: 767px) {
   .section {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .steps-headline {
     &:before,
@@ -191,7 +191,7 @@ img {
     }
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   .section {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -203,6 +203,8 @@ img {
       }
     }
   }
+}
+@media (min-width: 768px) and (max-width: 1679px) {
   .steps-headline {
     &__clarna {
       left: calc(100% - 80px);
@@ -224,7 +226,7 @@ img {
     }
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1281px) {
   .section {
     padding-top: 95px;
     padding-bottom: 95px;
@@ -232,7 +234,7 @@ img {
   .headline-wrap {
     h2 {
       & + * {
-        margin-top: 5px;
+        margin-top: 10px;
       }
     }
   }
@@ -335,17 +337,17 @@ img {
       &:first-child {
         &:before {
           position: relative;
-          top: -2px;
-          width: 20px;
-          height: 20px;
+          top: -1px;
+          width: 16px;
+          height: 16px;
           border-radius: 50%;
           background-color: $green;
         }
       }
       &:last-child {
         &:before {
-          width: 28px;
-          height: 28px;
+          width: 20px;
+          height: 20px;
           background: url(../img/Icons/ready-stock.svg) no-repeat 50% 50% / contain;
         }
       }
@@ -441,7 +443,7 @@ img {
     }
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   .btn {
     height: 75px;
     padding-left: 20px;
@@ -451,7 +453,7 @@ img {
       padding-bottom: 20px;
       padding-left: 65px;
       padding-right: 150px;
-      font-size: 45px;
+      font-size: 30px;
       &:after {
         right: 25px;
         border-left: 30px solid #fff;
@@ -483,11 +485,11 @@ img {
   .try-free {
     small {
       margin-top: 10px;
-      font-size: 21px;
+      font-size: 17px;
     }
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1281px) {
   .pulse {
     animation-name: pulse;
     -webkit-animation-name: pulse;
@@ -506,9 +508,9 @@ img {
     &--triangle {
       padding-top: 20px;
       padding-bottom: 20px;
-      padding-left: 60px;
-      padding-right: 150px;
-      font-size: 50px;
+      padding-left: 80px;
+      padding-right: 130px;
+      font-size: 32px;
       &:before {
         width: 90px;
       }
@@ -541,7 +543,7 @@ img {
   .try-free {
     small {
       margin-top: 8px;
-      font-size: 23px;
+      font-size: 18px;
     }
   }
 }
@@ -593,6 +595,17 @@ a {
 .text-lg {
   font-family: "IBMPlexSansThai-Regular", sans-serif;
   font-weight: 400;
+  line-height: 1.78;
+  font-size: 1.3em;
+}
+.text-md {
+  font-size: 1.2em;
+  font-family: "IBMPlexSansThai-Regular", sans-serif;
+  font-weight: 400;
+
+}
+.text-sm {
+  font-size: 0.9em;
 }
 
 h1,
@@ -634,53 +647,55 @@ h4 {
   .mobile-text-lg {
     font-size: 20px;
   }
-  .text-md {
+  /*.text-md {
     font-size: 15px;
-  }
-  .text-lg {
+  }*/
+  /*.text-lg {
     font-size: 18px;
-  }
+  }*/
 }
 @media (min-width: 768px) {
-  .text-md {
+  /*.text-md {
     font-size: 22px;
-  }
+  }*/
 }
-@media (min-width: 768px) and (max-width: 1279px) {
-  .text-lg {
+@media (min-width: 768px) and (max-width: 1280px) {
+  /*.text-lg {
     font-size: 25px;
-  }
+  }*/
 }
-@media (min-width: 992px) and (max-width: 1279px) {
+@media (min-width: 992px) and (max-width: 1280px) {
   h1,
   h2 {
-    font-size: 55px;
+    font-size: 40px;
     line-height: 1.3;
   }
   h3 {
     font-size: 46px;
   }
   h4 {
-    font-size: 30px;
+    font-size: 26px;
   }
 }
-@media (min-width: 1280px) {
-  h1,
+@media (min-width: 1281px) {
+  h1 {
+    font-size: 50px;
+  }
   h2 {
-    font-size: 60px;
+    font-size: 45px;
     line-height: 1.3;
   }
   h3 {
-    font-size: 54px;
+    font-size: 40px;
   }
   h4 {
-    font-size: 36px;
+    font-size: 28px;
   }
 }
-@media (min-width: 1280px) {
-  .text-lg {
+@media (min-width: 1281px) {
+  /*.text-lg {
     font-size: 30px;
-  }
+  }*/
 }
 
 /***** rating ******/
@@ -793,7 +808,7 @@ h4 {
   }
 }
 
-@media (max-width: 1279px) {
+@media (max-width: 1280px) {
   .topbar {
     font-size: 16px;
   }
@@ -908,7 +923,7 @@ h4 {
     }
   }
 }
-@media (min-width: 1024px) and (max-width: 1279px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
   .wrap {
     padding-top: 107px;
   }
@@ -941,12 +956,12 @@ h4 {
     width: 113px;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1281px) {
   .wrap {
-    padding-top: 180px;
+    padding-top: 160px;
   }
   .topbar {
-    height: 80px;
+    height: 60px;
     font-size: 22px;
   }
   .header {
@@ -976,8 +991,16 @@ h4 {
 
 /***** banner ******/
 .banner {
-  background-color: #FFDFE2;
+  position: relative;
   overflow: hidden;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFDFE2;
+  }
   &__info {
     position: relative;
     display: flex;
@@ -1169,7 +1192,9 @@ h4 {
     padding-top: 27px;
     padding-bottom: calc(27px + 120px);
     margin-bottom: -120px;
-
+    &:before {
+      bottom: 120px;
+    }
     &__woman {
       width: 495px;
       margin-top: -20px;
@@ -1255,6 +1280,9 @@ h4 {
     padding-top: 35px;
     padding-bottom: calc(76px + 190px);
     margin-bottom: -190px;
+    &:before {
+      bottom: 190px;
+    }
     &__woman {
       width: 1029px;
       margin-top: -50px;
@@ -1291,7 +1319,7 @@ h4 {
 
   .check-list {
     li {
-      font-size: 30px;
+      font-size: 24px;
       &:before {
         height: 42px;
         width: 26px;
@@ -1308,6 +1336,9 @@ h4 {
     padding-top: 65px;
     padding-bottom: calc(78px + 150px);
     margin-bottom: -150px;
+    &:before {
+      bottom: 150px;
+    }
     &__info {
       margin-top: 30px;
       margin-bottom: 30px;
@@ -1365,6 +1396,9 @@ h4 {
       margin-left: 0;
       margin-right: -40px;
     }
+    .desktop-hidden {
+      display: none !important;
+    }
   }
 
   .check-list {
@@ -1372,8 +1406,8 @@ h4 {
     li {
       padding-right: 20px;
       &:before {
-        width: 33px;
-        height: 44px;
+        width: 30px;
+        height: 33px;
         margin-right: 20px;
       }
       & + li {
@@ -1396,6 +1430,9 @@ h4 {
   .banner {
     padding-bottom: calc(78px + 300px);
     margin-bottom: -300px;
+    &:before {
+      bottom: 300px;
+    }
     &__woman {
       width: 1112px;
       margin-right: -160px;
@@ -1427,7 +1464,6 @@ h4 {
     }
   }
   .check-list {
-    font-size: 32px;
     padding-right: 30px;
   }
 }
@@ -1447,15 +1483,28 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
     &.bg-light-pink {
       border-radius: 50%;
     }
+    img {
+      display: block;
+    }
   }
+
+  h5 {
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+}
+
+.promotion {
+  line-height: 1.14;
 }
 
 @media (max-width: 767px) {
   .inline {
-    font-size: 16px;
+    font-size: 14px;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
@@ -1463,10 +1512,12 @@ h4 {
       width: calc(33% - 10px);
     }
     &__icon {
-      margin-bottom: 11px;
       &.bg-light-pink {
         width: 90px;
-        height: 90px;
+        height: 90px !important;
+      }
+      & + * {
+        margin-top: 11px;
       }
     }
   }
@@ -1483,29 +1534,35 @@ h4 {
     }                             
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   .inline {
-    font-size: 20px;
+    font-size: 16px;
     &__icon {
-      margin-bottom: 13px;
       &.bg-light-pink {
         width: 93px;
-        height: 93px;
+        height: 93px !important;
+      }
+      & + * {
+        margin-top: 13px;
       }
     }
   }
   .promotion {
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin-top: 25px;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1281px) {
   .inline {
-    font-size: 28px;
+    font-size: 20px;
     &__icon {
-      margin-bottom: 18px;
       &.bg-light-pink {
         width: 120px;
-        height: 120px;
+        height: 120px !important;
+      }
+      & + * {
+        margin-top: 18px;
       }
     }
   }
@@ -1558,9 +1615,9 @@ h4 {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1280px) {
   .testimonials-slider {
-    .testimonial {
+    .card {
       width: 350px;
     }
   }
@@ -1587,17 +1644,16 @@ h4 {
       width: 300px;
     }
   }
-}
-@media (min-width: 992px) and (max-width: 1279px) {
+
   .testimonials-slider {
-    .testimonial {
-      width: 403px;
-    }
+    margin-top: 25px;
+    border-top: 1px solid #B5B5B5;
+    border-bottom: 1px solid #B5B5B5;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1281px) {
   .testimonials-slider {
-    .testimonial {
+    .card {
       width: 450px;
     }
   }
@@ -1659,11 +1715,17 @@ h4 {
     line-height: 1;
     background: url(../img/Steps/steps-number-bg.svg) no-repeat 50% 50% / contain
   }
+  &__rating {
+    margin-bottom: 5px;
+  }
   h3 {
     margin-bottom: 10px;
   }
+  .text-lg {
+    font-size: 1.2em;
+  }
 }
-@media (max-width: 1279px) {
+@media (max-width: 1280px) {
   .card {
     &__number {
       width: 78px;
@@ -1703,7 +1765,7 @@ h4 {
     }
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   .card {
     &__meta {
       h5 {
@@ -1715,7 +1777,7 @@ h4 {
     }
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1281px) {
   .card {
     &__meta {
       h5 {
@@ -1771,14 +1833,14 @@ h4 {
     gap: 10px;
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   .benefits {
     margin-top: 45px;
     gap: 38px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1281px) {
   .benefits {
     margin-top: 50px;
     gap: 16px;
@@ -1819,18 +1881,7 @@ h4 {
     }
   }
 }
-@media (min-width: 768px) {
-  .ingredients-slider {
-    font-size: 26px;
-    .text-blue {
-      font-size: 28px;
-    }
-    .card__title {
-      font-size: 34px;
-    }
-  }
-}
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   .ingredients-section {
     .inline {
       margin-top: 22px;
@@ -1844,9 +1895,16 @@ h4 {
   .ingredients-slider {
     margin-top: 32px;
     margin-bottom: 40px;
+    font-size: 20px;
+    .text-blue {
+      font-size: 22px;
+    }
+    .card__title {
+      font-size: 28px;
+    }
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1281px) {
   .ingredients-section {
     .inline {
       margin-top: 28px;
@@ -1856,6 +1914,13 @@ h4 {
   .ingredients-slider {
     margin-top: 55px;
     margin-bottom: 73px;
+    font-size: 24px;
+    .text-blue {
+      font-size: 26px;
+    }
+    .card__title {
+      font-size: 32px;
+    }
   }
 }
 
@@ -1899,7 +1964,7 @@ h4 {
     text-align: center;
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   .testimonials {
     margin-bottom: 77px;
     .card__title {
@@ -1915,7 +1980,7 @@ h4 {
     text-align: right;
   }
 }
-@media (min-width: 1024px) and (max-width: 1279px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
   .testimonials {
     grid-template-columns: repeat(3, 1fr);
     //row-gap: 30px;
@@ -1928,7 +1993,7 @@ h4 {
     grid-gap: 20px;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1281px) {
   .testimonials {
     margin-bottom: 107px;
     grid-template-columns: repeat(4, 1fr);
@@ -1965,7 +2030,6 @@ h4 {
       left: -3px;
       top: -3px;
       bottom: -3px;
-      width: 135px;
       display: block;
       @include border-radius;
       background: $pink url(../img/PremiumScincare/colba.svg) no-repeat 50% 50%;
@@ -1981,10 +2045,12 @@ h4 {
   }
   &__cliniclly {
     position: absolute;
+    left: -20px;
   }
   &__clarna {
     position: absolute;
     bottom: 0;
+    right: -20px;
   }
   p {
     font-family: "IBMPlexSansThai-Regular", sans-serif;
@@ -2038,7 +2104,7 @@ h4 {
   }
 }
 
-@media (max-width: 1279px) {
+@media (max-width: 1280px) {
   .premium-skincare {
     margin-top: 13px;
     text-align: center;
@@ -2050,13 +2116,12 @@ h4 {
 
   .percents {
     &__number {
-      font-size: 48px;
+      font-size: 36px;
     }
   }
 }
 @media (max-width: 767px) {
   .premium-skincare {
-    font-size: 18px;
     &__plus {
       margin-top: 16px;
       padding-left: 89px;
@@ -2106,12 +2171,32 @@ h4 {
     &__item {
       flex: 1;
     }
-    
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .premium-skincare {
-    font-size: 30px;
+    &__images {
+      padding-bottom: 75px;
+    }
+    &__cliniclly {
+      width: 160px;
+      left: -20px;
+      bottom: 15px;
+    }
+    &__clarna {
+      position: absolute;
+      right: -20px;
+      width: 250px;
+    }
+    &__pluses {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+  .premium-skincare {
     &__desc {
       display: flex;
       flex-wrap: wrap;
@@ -2119,7 +2204,6 @@ h4 {
     &__images {
       width: 42%;
       order: 2;
-      padding-bottom: 100px;
     }
     &__pluses {
       width: 50%;
@@ -2139,21 +2223,6 @@ h4 {
         padding-right: 20px;
       }
     }
-    &__cliniclly {
-      width: 204px;
-      left: -20px;
-      bottom: 30px;
-    }
-    &__clarna {
-      position: absolute;
-      right: -50px;
-      width: 340px;
-    }
-    &__pluses {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
   }
 
   .percents {
@@ -2164,11 +2233,70 @@ h4 {
     }
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 992px) and (max-width: 1280px) {
+  .premium-skincare {
+    &__images {
+      padding-bottom: 75px;
+    }
+    &__cliniclly {
+      width: 190px;
+      left: -20px;
+      bottom: 20px;
+    }
+    &__clarna {
+      position: absolute;
+      right: -20px;
+      width: 320px;
+    }
+    &__pluses {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+@media (min-width: 1281px) and (max-width: 1559px) {
+  .premium-skincare {
+    &__images {
+      padding-bottom: 120px;
+    }
+    &__cliniclly {
+      width: 270px;
+      bottom: 30px;
+    }
+    &__clarna {
+      position: absolute;
+      width: 380px;
+    }
+    &__pluses {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+@media (min-width: 1560px) and (max-width: 1679px) {
+  .premium-skincare {
+    padding-bottom: 150px;
+    &__cliniclly {
+      width: 316px;
+      bottom: 30px;
+    }
+    &__clarna {
+      position: absolute;
+      width: 460px;
+    }
+    &__pluses {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+@media (min-width: 1281px) {
   .premium-skincare {
     position: relative;
     margin-top: 52px;
-    font-size: 36px;
     display: flex;
     justify-content: space-between;
     &__desc {
@@ -2179,32 +2307,40 @@ h4 {
       top: 0;
       right: 0;
       width: 42%;
-      padding-bottom: 230px;
     }
     &__plus {
       margin-top: 40px;
-      padding-left: 149px;
-      min-height: 135px;
+      padding-left: 129px;
+      min-height: 110px;
+      &:before {
+        width: 110px;
+        background-size: 55px auto;
+      }
       &:after {
         padding-left: 37px;
-      padding-right: 37px;
+        padding-right: 37px;
       }
     }
-    &__cliniclly {
-      left: -70px;
-      bottom: 50px;
-    }
-    &__clarna {
-      right: -109px;
-    }
-    &__pluses {
-      margin-top: 50px;
+  }
+
+  @media (min-width: 1680px) {
+    .premium-skincare {
+      &__cliniclly {
+        left: -70px;
+        bottom: 50px;
+      }
+      &__clarna {
+        right: -109px;
+      }
+      &__pluses {
+        margin-top: 50px;
+      }
     }
   }
 
   .percents {
     &__number {
-      font-size: 46px;
+      font-size: 36px;
     }
     &__item {
       margin-top: 20px;
@@ -2213,13 +2349,17 @@ h4 {
       padding-right: 50px;
     }
     h5 {
-      font-size: 34px;
+      font-size: 28px;
     }
   }
 }
 
 /***** steps-to-use *****/
-
+.steps-to-use {
+  h3 {
+    margin-bottom: 20px;
+  }
+}
 @media (max-width: 1023px) {
   .steps-to-use {
     margin-bottom: 38px;
@@ -2239,7 +2379,6 @@ h4 {
   .steps-to-use {
     margin-top: 40px;
     .card {
-      font-size: 18px;
       h3 {
         font-size: 20px;
         line-height: 1.4;
@@ -2255,7 +2394,7 @@ h4 {
     }
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   .steps-to-use {
     margin-top: 40px;
   }
@@ -2265,29 +2404,27 @@ h4 {
     }
   }
 }
-@media (min-width: 1024px) and (max-width: 1279px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
   .steps-to-use {
     margin-bottom: 70px;
     gap: 14px;
     .card {
-      font-size: 18px;
       h3 {
         font-size: 20px;
       }
     }
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1281px) {
   .steps-to-use {
     margin-top: 90px;
     margin-bottom: 93px;
     gap: 20px;
     .card {
-      font-size: 30px;
       padding-bottom: 24px;
       h3 {
         line-height: 1.1;
-        font-size: 32px;
+        font-size: 28px;
       }
     }
   }
@@ -2336,6 +2473,7 @@ h4 {
   &__item {
     position: relative;
     z-index: 2;
+    text-align: center;
   }
   &__name {
     position: absolute;
@@ -2385,7 +2523,7 @@ h4 {
     z-index: 3;
   }
 }
-@media (max-width: 1279px) {
+@media (max-width: 1280px) {
   .ingredients { 
     &__items {
       display: grid;
@@ -2457,7 +2595,7 @@ h4 {
     }
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   .introducing {
     &__desc {
       min-height: 279px;
@@ -2486,6 +2624,11 @@ h4 {
       width: calc(100% - 12px);
       font-size: 23px;
     }
+    &__item {
+      img {
+        width: 258px;
+      }
+    }
     &__items {
       gap: 35px;
       grid-template-columns: repeat(3, 1fr);
@@ -2510,7 +2653,7 @@ h4 {
     }
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1281px) {
   .introducing {
     &__desc {
       min-height: 360px;
@@ -2520,22 +2663,21 @@ h4 {
       padding-top: 50px;
       padding-bottom: 50px;
       padding-right: 50px;
-      font-size: 43px;
+      font-size: 40px;
       line-height: 1.53;
     }
   }
 
   .ingredients {
     position: relative;
-    padding-top: 521px;
     margin-top: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
     &__name {
       width: calc(100% - 24px);
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 15px;
+      padding-right: 17px;
     }
     &__gurantee {
       bottom: 384px;
@@ -2546,14 +2688,6 @@ h4 {
       &:nth-child(1),
       &:nth-child(2) {
         top: 0;
-      }
-      &:nth-child(3),
-      &:nth-child(4) {
-        top: 305px;
-      }
-      &:nth-child(5),
-      &:nth-child(6) {
-        top: 685px;
       }
       &:nth-child(1) {
         right: calc(50% + 17px);
@@ -2580,6 +2714,46 @@ h4 {
   }
 }
 
+@media (min-width: 1281px) and (max-width: 1639px) {
+  .ingredients {
+    padding-top: 300px;
+    &__clarna {
+      width: 80%;
+    }
+    &__item {
+      img {
+        width: 250px;
+      }
+      &:nth-child(3),
+      &:nth-child(4) {
+        top: 150px;
+      }
+      &:nth-child(5),
+      &:nth-child(6) {
+        bottom: 240px;
+      }
+    }
+    &__name {
+      font-size: 20px;
+    }
+  }
+}
+@media (min-width: 1640px) {
+  .ingredients {
+    padding-top: 430px;
+    &__item {
+      &:nth-child(3),
+      &:nth-child(4) {
+        top: 250px;
+      }
+      &:nth-child(5),
+      &:nth-child(6) {
+        bottom: 325px;
+      }
+    }
+  }
+}
+
 /***** check-line *****/
 .check-line {
   display: flex;
@@ -2592,7 +2766,7 @@ h4 {
     background: url(../img/Icons/checkmark.svg) no-repeat 0 50%;
   }
 }
-@media (max-width: 1279px) {
+@media (max-width: 1280px) {
   .check-line {
     &__item {
       padding-left: 27px;
@@ -2610,7 +2784,7 @@ h4 {
     }
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   .check-line {
     height: 70px;
     font-size: 26px;
@@ -2620,7 +2794,7 @@ h4 {
     }
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1281px) {
   .check-line {
     height: 100px;
     font-size: 32px;
@@ -2654,8 +2828,12 @@ h4 {
     padding: 10px 5px;
   }
 }
+.after-symptoms {
+  line-height: 1.78;
+  font-size: 1.2em;
+}
 
-@media (max-width: 1279px) {
+@media (max-width: 1280px) {
   .symptoms {
     flex-wrap: wrap;
   }
@@ -2677,8 +2855,14 @@ h4 {
   }
   .symptom {
     &__title {
-      font-size: 36px;
+      font-size: 30px;
     }
+  }
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+  .symptoms {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
@@ -2724,7 +2908,7 @@ h4 {
     }
   }
 }
-@media (max-width: 1279px) {
+@media (max-width: 1280px) {
   .guarantee-logos {
     margin-top: 40px;
     display: flex;
@@ -2816,7 +3000,7 @@ h4 {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   .guarantee {
     margin-bottom: 90px;
     h3 {
@@ -2841,25 +3025,24 @@ h4 {
     }
   }
 }
-@media (min-width: 1024px) and (max-width: 1279px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
   .guarantee {
     max-width: calc(100% - 200px);
     margin-left: auto;
     margin-right: auto;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1281px) {
   .guarantee {
     margin-bottom: 90px;
     &__text {
       padding-bottom: 50px;
     }
     h3 {
-      font-size: 50px;
       line-height: 1.16;
     }
     p {
-      font-size: 32px;
+      font-size: 28px;
     }
   }
 
@@ -2891,10 +3074,13 @@ h4 {
       &:nth-child(5) {
         right: -10px;
       }
+      h5 {
+        font-size: 24px;
+      }
     }
   }
 }
-@media (min-width: 1280px) and (max-width: 1639px) {
+@media (min-width: 1281px) and (max-width: 1639px) {
   .guarantee {
     &__text {
       width: calc(100% - 500px);
@@ -2907,7 +3093,6 @@ h4 {
       width: calc(100% - 800px);
     }
     h5 {
-      font-size: 30px;
       line-height: 1.2;
     }
   }
@@ -2960,7 +3145,7 @@ h4 {
   }
 }
 
-@media (max-width: 1279px) {
+@media (max-width: 1280px) {
   .avarage-rating {
     &__progress-wrap {
       display: flex;
@@ -3015,7 +3200,7 @@ h4 {
     }
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   .avarage-rating {
     font-size: 22px;
     margin-top: 30px;
@@ -3050,14 +3235,14 @@ h4 {
     }
   }
 }
-@media (min-width: 1024px) and (max-width: 1279px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
   .avarage-rating {
     &__progress-bar {
       width: 200px;
     }
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1281px) {
   .avarage-rating {
     margin-top: 50px;
     margin-bottom: 30px;
@@ -3206,6 +3391,8 @@ h4 {
   &__counting {
     padding-left: 30px;
     padding-right: 30px;
+    display: inline-block;
+    width: 100%;
   }
   &__shipping {
     display: flex;
@@ -3239,7 +3426,7 @@ h4 {
   }
   &__promotion {
     display: inline-flex;
-    background: url(../img/Pricing/sale.svg) no-repeat 0 50% / 47px auto;
+    background: url(../img/Pricing/sale.svg) no-repeat 0 50% / 40px auto;
   }
   &__count {
     padding: 10px 0 3px;
@@ -3307,7 +3494,7 @@ h4 {
   display: none;
 }
 
-@media (max-width: 1279px) {
+@media (max-width: 1280px) {
   .buttons-group {
     .btn {
       width: 100%;
@@ -3429,7 +3616,7 @@ h4 {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1279px) {
+@media (min-width: 992px) and (max-width: 1280px) {
   .pricing-payment {
     font-size: 24px;
   }
@@ -3496,7 +3683,7 @@ h4 {
       width: 12px;
     }
     &__total {
-      font-size: 68px;
+      font-size: 48px;
       margin-top: 10px;
       margin-bottom: 15px;
     }
@@ -3534,7 +3721,7 @@ h4 {
     }
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1281px) {
   .inventory {
     margin-top: 10px;
     margin-bottom: 38px;
@@ -3545,7 +3732,7 @@ h4 {
   .pricing {
     padding-bottom: 30px;
     &__title {
-      font-size: 60px;
+      font-size: 44px;
     }
     &__item {
       h3 {
@@ -3569,22 +3756,22 @@ h4 {
       width: 18px;
     }
     &__shipping {
-      font-size: 28px;
+      font-size: 24px;
       margin-bottom: 35px;
     }
     &__count {
       font-size: 23px;
     }
     &__total {
-      font-size: 80px;
+      font-size: 60px;
     }
     &__gift {
       height: 149px;
     }
     &__promotion {
       margin-top: 32px;
-      font-size: 40px;
-      padding-left: 60px;
+      font-size: 32px;
+      padding-left: 50px;
       margin-bottom: 10px;
     }
     &__count {
@@ -3599,18 +3786,18 @@ h4 {
       font-size: 64px;
     }
     .text-green {
-      margin-top: 24px;
-      font-size: 45px;
+      margin-top: 14px;
+      font-size: 36px;
     }
     .btn {
-      height: 105px;
-      font-size: 50px;
+      height: 85px;
+      font-size: 36px;
     }
   }
   .pricing-info {
     margin-top: 66px;
     img {
-      max-height: 70px;
+      transform: scale(0.8);
     }
   }
 }
@@ -3659,7 +3846,7 @@ h4 {
   }
 }
 
-@media (max-width: 1279px) {
+@media (max-width: 1280px) {
   .accordion {
     &__item {
       border-width: 1px;
@@ -3692,7 +3879,7 @@ h4 {
       padding: 15px 60px 15px 20px;
       font-size: 20px;
       &:after {
-        right: 40px;
+        right: 30px;
       }
     }
     &__content {
@@ -3701,7 +3888,7 @@ h4 {
     }
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   .accordion {
     margin-bottom: 30px;
     gap: 10px;
@@ -3712,20 +3899,20 @@ h4 {
     }
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1281px) {
   .accordion {
     gap: 17px;
     margin-bottom: 50px;
     &__title {
       padding-top: 18px;
       padding-bottom: 18px;
-      padding-left: 70px;
-      padding-right: 70px;
-      font-size: 32px;
+      padding-left: 50px;
+      padding-right: 50px;
+      font-size: 26px;
     }
     &__content {
-      padding-left: 70px;
-      padding-right: 70px;
+      padding-left: 50px;
+      padding-right: 50px;
     }
   }
 }
@@ -3766,7 +3953,7 @@ h4 {
     }
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   .pre-footer {
     .inline {
       font-size: 18px;
@@ -3782,26 +3969,26 @@ h4 {
       &__item {
         flex-direction: row;
         align-items: center;
+        text-align: left;
         img {
-          margin-right: 7px;
+          transform: scale(0.8);
         }
       }
     }
   }
 }
-@media (min-width: 1024px) and (max-width: 1279px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
   .pre-footer {
     padding-top: 32px;
     padding-bottom: 32px;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1281px) {
   .pre-footer {
     padding-top: 52px;
     padding-bottom: 52px;
     .inline {
       gap: 40px;
-      font-size: 32px;
       img {
         max-width: 70px;
       }
@@ -3826,16 +4013,16 @@ h4 {
     }
   }
   &__btn {
-    height: 113px;
+    height: 63px;
     border-radius: 20px;
     align-items: center;
     justify-content: center;
-    font-size: 48px;
+    font-size: 28px;
     font-family: "IBMPlexSansThai-Bold", sans-serif;
     white-space: nowrap;
 
     img {
-      width: 66px;
+      width: 36px;
       margin-right: 20px;
     }
   }
@@ -3866,7 +4053,7 @@ h4 {
     display: flex;
   }
 }
-@media (max-width: 1279px) {
+@media (max-width: 1280px) {
   .copy {
     .container {
       flex-direction: column-reverse;
@@ -3894,12 +4081,9 @@ h4 {
     &__btn {
       height: 63px;
       margin-top: 25px;
-      padding-left: 30px;
-      padding-right: 30px;
+      padding-left: 20px;
+      padding-right: 20px;
       font-size: 24px;
-      img {
-        width: 44px;
-      }
     }
     &__logos {
       margin-top: 32px;
@@ -3940,6 +4124,7 @@ h4 {
   .copy {
     padding-top: 10px;
     padding-bottom: 10px;
+    font-size: 12px;
     .container {
       display: flex;
       flex-direction: column-reverse;
@@ -3962,7 +4147,7 @@ h4 {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   .footer {
     &__top {
       padding-top: 42px;
@@ -3971,11 +4156,6 @@ h4 {
     &__btn {
       margin-top: 32px;
       margin-bottom: 32px;
-      height: 80px;
-      font-size: 35px;
-      img {
-        width: 51px;
-      }
     }
     &__logo {
       width: 202px;
@@ -4021,22 +4201,23 @@ h4 {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1281px) {
   .footer {
-    font-size: 30px;
+    font-size: 20px;
     &__top {
       padding-top: 50px;
       padding-bottom: 42px;
     } 
     &__logo {
-      width: 250px;
+      width: 200px;
     }
     &__btn {
       margin-top: 34px;
-      padding-left: 48px;
-      padding-right: 48px;
+      padding-left: 30px;
+      padding-right: 30px;
     }
     &__logos {
+      margin-top: 48px;
       & > div {
         &:nth-child(2) {
           padding-left: 45px;
@@ -4045,13 +4226,13 @@ h4 {
       }
     }
     &__paid {
-      column-gap: 15px;
+      img {
+        transform: scale(0.75);
+      }
     }
   }
   .copy {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    font-size: 28px;
+    font-size: 16px;
     .container {
       align-items: center;
       justify-content: space-between;
@@ -4106,7 +4287,7 @@ h4 {
 }
 
 /***** visibility *****/
-@media (max-width: 1279px) {
+@media (max-width: 1280px) {
   .desktop-visible {
     display: none;
   }
@@ -4121,7 +4302,7 @@ h4 {
     display: none;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1281px) {
   .desktop-hidden {
     display: none;
   }

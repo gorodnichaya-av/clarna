@@ -8,16 +8,17 @@ $(function () {
             windowWidth = $(window).width();
 
       if (windowWidth < 768) {
-        if (scroll > 100){
-          sticky.slideUp();
+        if (scroll > 37){
+          sticky.slideUp(200);
         } else {
-          sticky.slideDown();
+          sticky.slideDown(200);
         }
+      } else {
+        sticky.show(0);
       }
-
-      
- 
     });
+
+
     // Mobile header menu 
     $('.js-menu-btn').on('click', function (){
       if ($(this).hasClass('opened')) {
@@ -116,10 +117,9 @@ $(function () {
       responsive: [
         {
           centerMode: true,
-          breakpoint: 991,
+          breakpoint: 1025,
           settings: {
             centerMode: true,
-            slidesToShow: 2,
             variableWidth: true,
           }
         },
@@ -135,23 +135,31 @@ $(function () {
     });
 
     // Add the same height for list in pricing
-    function addHeightPticingList() {
+    function addHeightPticingList(elem) {
       let heightArray = [];
       function getMaxOfArray(numArray) {
           return Math.max.apply(null, numArray);
       }
-      $('.js-pricing-count').each(function() {
+      elem.each(function() {
         heightArray.push($(this).outerHeight(true));
       });
       maxHeight = getMaxOfArray(heightArray);
-      $('.js-pricing-count').each(function() {
+      elem.each(function() {
           $(this).css({
-            'min-height': `${maxHeight}px`
+            'height': `${maxHeight}px`
           });
       });
     }
 
-    addHeightPticingList();
+    addHeightPticingList($('.js-pricing-count'));
+
+    // Add the same height for "inline" icons
+
+    $('.inline').each(function() {
+      const inlineElem = $(this).find('.inline__icon');
+      addHeightPticingList(inlineElem);
+    }); 
+    
 
     // Premium scare height
     function addPremiumScareHeight() {
@@ -165,9 +173,16 @@ $(function () {
 
     addPremiumScareHeight();
 
+
+    // Functions on resize
     $(window).resize(function() {
-      addHeightPticingList();
       addPremiumScareHeight();
+      addHeightPticingList($('.js-pricing-count'));
+
+      $('.inline').each(function() {
+        const inlineElem = $(this).find('.inline__icon');
+        addHeightPticingList(inlineElem);
+      }); 
     });
 
     // Payment discount
