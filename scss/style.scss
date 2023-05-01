@@ -977,7 +977,7 @@ h4 {
 /***** banner ******/
 .banner {
   background-color: #FFDFE2;
-  overflow-x: hidden;
+  overflow: hidden;
   &__info {
     position: relative;
     display: flex;
@@ -1167,7 +1167,8 @@ h4 {
 @media (max-width: 767px) {
   .banner {
     padding-top: 27px;
-    padding-bottom: 27px;
+    padding-bottom: calc(27px + 120px);
+    margin-bottom: -120px;
 
     &__woman {
       width: 495px;
@@ -1252,7 +1253,8 @@ h4 {
 @media (min-width: 768px) and (max-width: 1279px) {
   .banner {
     padding-top: 35px;
-    padding-bottom: 76px;
+    padding-bottom: calc(76px + 190px);
+    margin-bottom: -190px;
     &__woman {
       width: 1029px;
       margin-top: -50px;
@@ -1304,7 +1306,8 @@ h4 {
 @media (min-width: 1280px) {
   .banner {
     padding-top: 65px;
-    padding-bottom: 78px;
+    padding-bottom: calc(78px + 150px);
+    margin-bottom: -150px;
     &__info {
       margin-top: 30px;
       margin-bottom: 30px;
@@ -1391,6 +1394,8 @@ h4 {
 }
 @media (min-width: 1560px) {
   .banner {
+    padding-bottom: calc(78px + 300px);
+    margin-bottom: -300px;
     &__woman {
       width: 1112px;
       margin-right: -160px;
@@ -1857,6 +1862,9 @@ h4 {
 /***** testimonials ******/
 .testimonials {
   display: grid;
+  .card {
+    padding-bottom: 0;
+  }
   .card__meta {
     margin-top: 12px;
   }
@@ -1864,7 +1872,8 @@ h4 {
 @media (max-width: 1023px) {
   .testimonials {
     grid-template-columns: repeat(2, 1fr);
-    gap: 13px;
+    grid-auto-rows: 13px;
+    grid-gap: 13px;
   }
 }
 @media (max-width: 767px) {
@@ -1909,16 +1918,20 @@ h4 {
 @media (min-width: 1024px) and (max-width: 1279px) {
   .testimonials {
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 30px;
+    //row-gap: 30px;
     column-gap: 12px;
+  }
+}
+@media (min-width: 1024px) {
+  .testimonials {
+    grid-auto-rows: 20px;
+    grid-gap: 20px;
   }
 }
 @media (min-width: 1280px) {
   .testimonials {
-    margin-top: 107px;
+    margin-bottom: 107px;
     grid-template-columns: repeat(4, 1fr);
-    row-gap: 60px;
-    column-gap: 16px;
     .card__title {
       font-size: 28px;
     }

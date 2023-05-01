@@ -1,5 +1,23 @@
 $(function () {
   $(document).ready(function(){
+    // Mobile hide topbar on scroll 
+    var lastScrollTop = 0;
+    $(window).scroll(function(){
+        let sticky = $('.topbar'),
+            scroll = $(window).scrollTop(),
+            windowWidth = $(window).width();
+
+      if (windowWidth < 768) {
+        if (scroll > 100){
+          sticky.slideUp();
+        } else {
+          sticky.slideDown();
+        }
+      }
+
+      
+ 
+    });
     // Mobile header menu 
     $('.js-menu-btn').on('click', function (){
       if ($(this).hasClass('opened')) {
@@ -24,10 +42,9 @@ $(function () {
       });
       $(this).addClass('active');
     
-      var target = this.hash,
-          menu = target;
+      let target = this.hash;
       $target = $(target);
-      var scrollStop = (windowWidth > 480) ? ($target.offset().top - 50) : $target.offset().top - 30;
+      let scrollStop = (windowWidth > 480) ? ($target.offset().top - 107) : $target.offset().top - 92;
 
       $('html, body').stop().animate({
           'scrollTop': scrollStop
@@ -52,6 +69,14 @@ $(function () {
       $(this).addClass('active');
       $('.js-banner-general-slider').slick('slickGoTo',$(this).index());
     });
+
+    const navSlider = document.querySelector('.js-banner-nav'),
+          navArray = navSlider.querySelectorAll('.banner__slider-nav-item');
+    $('.js-banner-general-slider').on('click', '.slick-arrow', function () {
+      let activeIndex = $(this).closest('.slick-slider').find('.slick-active').attr('data-slick-index');
+      $('.banner__slider-nav-item').removeClass('active');
+      navArray[activeIndex].classList.add('active');
+  })
 
     // Content sliders
     $('.js-testimonials-slider').slick({
@@ -210,6 +235,54 @@ $(function () {
         $(".js-modal").fadeOut();
        }
     });
+
+    // Active class of header item on scroll
+    $(document).on("scroll", onScroll);
+    function onScroll(event){
+      var scrollPos = $(document).scrollTop();
+      $('.js-menu a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr('href'));
+        if ((refElement.position().top - $(window).height() / 2) <= scrollPos && (refElement.position().top - $(window).height() / 2) + refElement.height() > scrollPos) {
+          $('.js-menu a').removeClass('active');
+          currLink.addClass('active');
+        } else {
+          currLink.removeClass('active');
+        }
+      });
+    }
+
+    // Pintrest grid 
+    function resizeGridItem(item){
+      const grid = document.querySelector(".js-testimonials-grid"),
+            rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows')),
+            rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap')),
+            rowSpan = Math.ceil((item.querySelector('.card__content').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
+        
+      item.style.gridRowEnd = `span ${rowSpan}`; 
+    }
+    
+    function resizeAllGridItems(){
+      const grid = document.querySelector(".js-testimonials-grid"),
+            allItems = grid.querySelectorAll(".card");
+      for(x=0;x<allItems.length;x++){
+        resizeGridItem(allItems[x]);
+      }
+    }
+    
+    function resizeInstance(instance){
+      item = instance.elements[0];
+      resizeGridItem(item);
+    }
+    
+    window.onload = resizeAllGridItems();
+    window.addEventListener("resize", resizeAllGridItems);
+    
+    const grid = document.querySelector(".js-testimonials-grid"),
+          allItems = grid.querySelectorAll(".card");
+    for(x=0;x<allItems.length;x++){
+      imagesLoaded( allItems[x], resizeInstance);
+    }
 
   })
 })
