@@ -12,7 +12,7 @@
   src: url("../fonts/IBMPlexSansThai-ExtraLight.woff2") format("woff2"), 
        url("../fonts/IBMPlexSansThai-ExtraLight.woff")
        format("woff");
-}
+} 
 
 @font-face {
   font-family: "IBMPlexSansThai-Light";
@@ -98,7 +98,7 @@ body {
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
-}
+} 
 
 .headline-wrap {
   position: relative;
@@ -106,7 +106,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-}
+} 
 
 .steps-headline {
   position: relative;
@@ -1354,7 +1354,7 @@ h4 {
 @media (min-width: 1280px) {
   .banner {
     padding-top: 65px;
-    padding-bottom: calc(78px + 150px);
+    padding-bottom: 110px;
     margin-bottom: -150px;
     &:before {
       bottom: 150px;
@@ -1459,7 +1459,7 @@ h4 {
 }
 @media (min-width: 1560px) {
   .banner {
-    padding-bottom: calc(78px + 300px);
+    padding-bottom: calc(88px + 300px);
     margin-bottom: -300px;
     &:before {
       bottom: 300px;

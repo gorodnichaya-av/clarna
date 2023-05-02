@@ -16,7 +16,7 @@ function style() {
     .pipe(plumber())
     .pipe(sass({ outputStyle: "expanded" }).on('error', sass.logError))
     .pipe(autoprefixer(['last 2 versions', '> 1%', 'ie 8', 'ie 7']))
-    .pipe(cleanCSS({ level: 2 }))
+    //.pipe(cleanCSS({ level: 1 }))
     //.pipe(concat('style.css'))
     .pipe(gulp.dest('./css'))
     .pipe(browserSync.stream())
