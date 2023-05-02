@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
 @font-face {
   font-family: "IBMPlexSansThai-Bold";
   src: url("../fonts/IBMPlexSansThai-Bold.woff2") format("woff2"), 
@@ -74,7 +76,7 @@ body {
 }
 @media (max-width: 767px) {
   body {
-    font-size: 13px;
+    font-size: 16px;
   }
 }
 @media (min-width: 768px) and (max-width: 1280px) {
@@ -151,6 +153,16 @@ img {
   }
 }
 
+@media (max-width: 1280px) {
+  .headline-wrap {
+    h2 {
+      & + * {
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
 @media (max-width: 1023px) {
   .steps-headline {
     &__clarna,
@@ -172,11 +184,13 @@ img {
       height: 40px;
     }
     &:before {
+      left: 0;
       top: calc(100% - 25px);
       transform: scaleX(-1);
     }
     &:after {
-      bottom: calc(100% - 25px);
+      right: 0;
+      bottom: calc(100% - 20px);
       background-image: url(../img/Steps/star-right-mobile.svg);
     }
   }
@@ -195,13 +209,6 @@ img {
   .section {
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-  .headline-wrap {
-    h2 {
-      & + * {
-        margin-top: 5px;
-      }
-    }
   }
 }
 @media (min-width: 768px) and (max-width: 1679px) {
@@ -404,7 +411,7 @@ img {
       right: 0;
       bottom: 0;
       width: 100%;
-      padding: 12px 30px;
+      padding: 7px 10px;
       background-color: $pink;
       color: #fff;
       z-index: 5;
@@ -604,9 +611,6 @@ a {
   font-weight: 400;
 
 }
-.text-sm {
-  font-size: 0.9em;
-}
 
 h1,
 h2 {
@@ -646,6 +650,15 @@ h4 {
 @media (max-width: 767px) {
   .mobile-text-lg {
     font-size: 20px;
+  }
+  h1,
+  h2 {
+    font-size: 25px;
+  }
+  .text-sm,
+  .text-md,
+  .text-lg {
+    font-size: 1.15em;
   }
   /*.text-md {
     font-size: 15px;
@@ -696,6 +709,9 @@ h4 {
   /*.text-lg {
     font-size: 30px;
   }*/
+  .text-sm {
+    font-size: 0.9em;
+  }
 }
 
 /***** rating ******/
@@ -809,16 +825,17 @@ h4 {
 }
 
 @media (max-width: 1280px) {
+  .wrap {
+    padding-top: 100px;
+  }
   .topbar {
-    font-size: 16px;
+    height: 36px;
+    font-size: 14px;
   }
 }
 @media (max-width: 1023px) {
   .wrap {
-    padding-top: 92px;
-  }
-  .topbar {
-    height: 37px;
+    padding-top: 91px;
   }
   .header__navbar {
     height: 55px;
@@ -924,12 +941,6 @@ h4 {
   }
 }
 @media (min-width: 1024px) and (max-width: 1280px) {
-  .wrap {
-    padding-top: 107px;
-  }
-  .topbar {
-    height: 43px;
-  }
   .header {
     &__navbar {
       height: 64px;
@@ -958,11 +969,11 @@ h4 {
 }
 @media (min-width: 1281px) {
   .wrap {
-    padding-top: 160px;
+    padding-top: 140px;
   }
   .topbar {
-    height: 60px;
-    font-size: 22px;
+    height: 40px;
+    font-size: 16px;
   }
   .header {
     &__navbar {
@@ -1126,9 +1137,6 @@ h4 {
   .container {
     position: relative;
   }
-  h1 {
-    line-height: 1.25;
-  }
 }
 .check-list {
   line-height: 1.4;
@@ -1159,6 +1167,9 @@ h4 {
       color: $white;
       margin-left: -20px;
       margin-right: -20px;
+      .text-pink {
+        color: $white;
+      }
     }
     &__slider {
       margin-top: 27px;
@@ -1190,10 +1201,15 @@ h4 {
 @media (max-width: 767px) {
   .banner {
     padding-top: 27px;
-    padding-bottom: calc(27px + 120px);
-    margin-bottom: -120px;
+    padding-bottom: 27px;
+    &--slider {
+      padding-top: 0;
+      .banner__text {
+        padding-top: 27px;
+      }
+    }
     &:before {
-      bottom: 120px;
+      bottom: 0;
     }
     &__woman {
       width: 495px;
@@ -1253,12 +1269,11 @@ h4 {
   }
 
   .check-list {
-    font-size: 16px;
     li {
       &:before {
         width: 15px;
         height: 27px;
-        margin-right: 5px;
+        margin-right: 10px;
       }
     }
   }
@@ -1278,12 +1293,17 @@ h4 {
 @media (min-width: 768px) and (max-width: 1279px) {
   .banner {
     padding-top: 35px;
-    padding-bottom: calc(76px + 190px);
-    margin-bottom: -190px;
-    &:before {
-      bottom: 190px;
+    padding-bottom: 76px;
+    &--slider {
+      padding-top: 0;
+      .banner__text {
+        padding-top: 35px;
+      }
     }
-    &__woman {
+    &:before {
+      bottom: 0;
+    }
+    &__woman { 
       width: 1029px;
       margin-top: -50px;
       &-wrap {
@@ -1305,7 +1325,7 @@ h4 {
     }
     &__clarna {
       width: 786px;
-      bottom: -190px;
+      bottom: -176px;
     }
     &__days {
       width: 160px;
@@ -1338,6 +1358,17 @@ h4 {
     margin-bottom: -150px;
     &:before {
       bottom: 150px;
+    }
+    &--slider {
+      padding-top: 0;
+      padding-bottom: 78px;
+      margin-bottom: 0;
+      &:before {
+        bottom: 0;
+      }
+      .banner__text {
+        padding-top: 65px;
+      }
     }
     &__info {
       margin-top: 30px;
@@ -1433,6 +1464,13 @@ h4 {
     &:before {
       bottom: 300px;
     }
+    &--slider {
+      margin-bottom: 0;
+      padding-bottom: 78px;
+      &:before {
+        bottom: 0;
+      }
+    }
     &__woman {
       width: 1112px;
       margin-right: -160px;
@@ -1486,6 +1524,7 @@ h4 {
     flex-shrink: 0;
     &.bg-light-pink {
       border-radius: 50%;
+      background-color: #FFDFE2;
     }
     img {
       display: block;
@@ -1506,7 +1545,8 @@ h4 {
   .inline {
     font-size: 14px;
     flex-wrap: wrap;
-    gap: 10px;
+    column-gap: 10px;
+    row-gap: 24px;
     justify-content: center;
     &__item {
       width: calc(33% - 10px);
@@ -1515,9 +1555,21 @@ h4 {
       &.bg-light-pink {
         width: 90px;
         height: 90px !important;
+        img {
+          transform: scale(0.8);
+        }
       }
       & + * {
         margin-top: 11px;
+      }
+    }
+
+    h5 {
+      font-size: 12px;
+      margin-left: -4px;
+      margin-right: -4px;
+      br {
+        display: none;
       }
     }
   }
@@ -1551,6 +1603,12 @@ h4 {
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 25px;
+    .inline__icon {
+      height: 115px !important;
+    }
+    img {
+      height: 115px;
+    }
   }
 }
 @media (min-width: 1281px) {
@@ -1571,7 +1629,7 @@ h4 {
   }
 }
 
-/***** slick slider ******/
+/***** slick slider / ingredients-slider / testimonials-slider ******/
 .slick-slider {
   .slick-dots {
     margin-top: 30px;
@@ -1596,6 +1654,12 @@ h4 {
       border: none;
       cursor: pointer;
     }
+  }
+}
+
+.ingredients-slider {
+  .bg-light-pink {
+    background-color: #FFDFE2;
   }
 }
 
@@ -1630,6 +1694,7 @@ h4 {
 @media (max-width: 767px) {
   .slick-slider {
     .slick-dots {
+      margin-top: 20px;
       gap: 8px;
       button {
         width: 11px;
@@ -1713,7 +1778,9 @@ h4 {
     margin-left: auto;
     margin-right: auto;
     line-height: 1;
-    background: url(../img/Steps/steps-number-bg.svg) no-repeat 50% 50% / contain
+    background: url(../img/Steps/steps-number-bg.svg) no-repeat 50% 50% / contain;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
   }
   &__rating {
     margin-bottom: 5px;
@@ -1749,12 +1816,13 @@ h4 {
       margin-bottom: 5px;
     }
     &__meta {
+      margin-top: 5px;
       h5 {
         font-size: 15px;
       }
     }
     h3 {
-      font-size: 26px;
+      font-size: 24px;
     }
   }
 }
@@ -1866,6 +1934,9 @@ h4 {
   .ingredients-section {
     .inline {
       margin-top: 23px;
+      &__icon {
+        min-height: 57px;
+      }
       img {
         max-height: 57px;
         width: auto;
@@ -1886,6 +1957,9 @@ h4 {
     .inline {
       margin-top: 22px;
       margin-bottom: 50px;
+      &__icon {
+        min-height: 77px;
+      }
       img {
         max-height: 77px;
         width: auto;
@@ -1943,7 +2017,16 @@ h4 {
 }
 @media (max-width: 767px) {
   .testimonials {
-    margin-bottom: 33px;  
+    margin-bottom: 33px; 
+    .card {
+      &__desc {
+        padding-bottom: 0;
+      }
+      p {
+        font-size: 13px;
+        line-height: 1.38;
+      }
+    } 
     .card__title {
       font-size: 16px;
     }    
@@ -1957,7 +2040,11 @@ h4 {
         padding-left: 17px;
         background-size: 15px auto;
       }
-    }             
+    } 
+    
+    & + .add-review {
+      margin-bottom: 0;
+    }
   }
   .add-review {
     margin-bottom: 36px;
@@ -2149,20 +2236,23 @@ h4 {
     }
     &__clarna {
       right: -20px;
-      width: 255px;
+      width: 260px;
     }
   }
 
   .percents {
     flex-direction: column;
     &__item {
-      margin-top: 10px;
+      margin-top: 20px;
     }
     &__number {
       text-align: center;
     }
     h5 {
       font-size: 18px;
+    }
+    .progress {
+      height: 13px;
     }
   }
 }
@@ -2255,44 +2345,6 @@ h4 {
     }
   }
 }
-@media (min-width: 1281px) and (max-width: 1559px) {
-  .premium-skincare {
-    &__images {
-      padding-bottom: 120px;
-    }
-    &__cliniclly {
-      width: 270px;
-      bottom: 30px;
-    }
-    &__clarna {
-      position: absolute;
-      width: 380px;
-    }
-    &__pluses {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-  }
-}
-@media (min-width: 1560px) and (max-width: 1679px) {
-  .premium-skincare {
-    padding-bottom: 150px;
-    &__cliniclly {
-      width: 316px;
-      bottom: 30px;
-    }
-    &__clarna {
-      position: absolute;
-      width: 460px;
-    }
-    &__pluses {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-  }
-}
 @media (min-width: 1281px) {
   .premium-skincare {
     position: relative;
@@ -2322,19 +2374,66 @@ h4 {
       }
     }
   }
+}
 
-  @media (min-width: 1680px) {
-    .premium-skincare {
-      &__cliniclly {
-        left: -70px;
-        bottom: 50px;
-      }
-      &__clarna {
-        right: -109px;
-      }
-      &__pluses {
-        margin-top: 50px;
-      }
+@media (min-width: 1281px) and (max-width: 1559px) {
+  .premium-skincare {
+    &__images {
+      padding-bottom: 120px;
+    }
+    &__cliniclly { 
+      width: 270px;
+      bottom: 30px;
+    }
+    &__clarna {
+      position: absolute;
+      width: 380px;
+    }
+    &__pluses {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+@media (min-width: 1560px) and (max-width: 1679px) {
+  .premium-skincare {
+    &__images {
+      padding-bottom: 150px;
+    }
+    &__cliniclly {
+      width: 316px;
+      bottom: 30px;
+    }
+    &__clarna {
+      position: absolute;
+      width: 460px;
+    }
+    &__pluses {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+@media (min-width: 1680px) {
+  .premium-skincare {
+    &__images {
+      padding-bottom: 250px;
+    }
+    &__desc {
+      padding-bottom: 200px;
+    }
+    &__cliniclly {
+      left: -70px;
+      bottom: 50px;
+    }
+    &__clarna {
+      right: -109px;
+    }
+    &__pluses {
+      margin-top: 50px;
     }
   }
 
@@ -2374,6 +2473,16 @@ h4 {
       &__item {
         width: calc(50% - 10px);
       }
+      &__icon {
+        min-height: 44px;
+      }
+      h5 {
+        font-size: 16px;
+      }
+      img {
+        height: 44px;
+        width: auto;
+      }
     }
   }
   .steps-to-use {
@@ -2401,6 +2510,15 @@ h4 {
   .steps {
     .inline {
       margin-top: 30px;
+      &__icon {
+        min-height: 65px;
+      }
+      img {
+        max-height: 65px;
+        &.steps-inline-shipping {
+          max-height: 55px;
+        }
+      }
     }
   }
 }
@@ -2563,6 +2681,12 @@ h4 {
     &__items {
       grid-template-columns: repeat(2, 1fr);
       gap: 13px;
+
+    }
+    &__item {
+      img {
+        max-width: 156px;
+      }
     }
     &__name {
       width: 100%;
@@ -2776,11 +2900,12 @@ h4 {
 }
 @media (max-width: 767px) {
   .check-line {
-    height: 55px;
-    font-size: 21px;
+    height: 50px;
+    font-size: 18px;
     &__item {
       padding-left: 25px;
-      background-size: 20px auto;
+      padding-right: 25px;
+      background-size: 18px auto;
     }
   }
 }
@@ -2934,13 +3059,13 @@ h4 {
       box-shadow: 2px 2px 6px rgba(103, 71, 71, 0.36);
     }
     &__img {
-      width: 184px;
-      height: 184px;
-      top: -92px;
+      width: 160px;
+      height: 160px;
+      top: -80px;
       margin-bottom: -72px;
       margin-top: 112px;
       img {
-        width: 160px;
+        width: 140px;
       }
     }
     &__signin {
@@ -2948,7 +3073,7 @@ h4 {
       width: auto;
     }
     h3 {
-      font-size: 28px;
+      font-size: 24px;
       line-height: 1.14;    
     }
     p {
@@ -2962,7 +3087,7 @@ h4 {
   }
   .guarantee-logos {
     img {
-      width: 86px;
+      width: 75px;
     }
     h5 {
       font-size: 13px;
@@ -3538,7 +3663,7 @@ h4 {
     &__count {
       margin-top: 10px;
       font-size: 16px;
-      min-height: unset !important;
+      height: unset !important;
       &-line {
         background-size: 13px auto;
         padding-left: 20px;
@@ -3547,14 +3672,15 @@ h4 {
         width: 100%;
         margin-bottom: 30px;
         justify-content: flex-end;
-        font-size: 22px;
+        font-size: 20px;
       }
     }
     &__promotion {
       margin-bottom: 15px;
-      font-size: 24px;
-      background-size: 37px auto;
-      padding-left: 43px;
+      font-size: 20px;
+      background-size: 25px auto;
+      padding-left: 33px;
+      padding-top: 2px;
     }
     &__shipping {
       font-size: 14px;
@@ -3564,20 +3690,18 @@ h4 {
       width: 12px;
     }
     &__total {
-      font-size: 68px;
-      margin-top: 10px;
-      margin-bottom: 15px;
+      font-size: 36px;
     }
     h3 {
       margin-top: 20px;
       font-size: 35px;
     }
     .text-green {
-      font-size: 26px;
+      font-size: 20px;
     }
     .btn {
-      height: 67px;
-      font-size: 34px;
+      height: 57px;
+      font-size: 24px;
     }
   }
 
@@ -4076,10 +4200,10 @@ h4 {
       }
     }
     &__logo {
-      width: 197px;
+      width: 167px;
     }
     &__btn {
-      height: 63px;
+      height: 53px;
       margin-top: 25px;
       padding-left: 20px;
       padding-right: 20px;
@@ -4106,6 +4230,8 @@ h4 {
       margin-right: 25px;
     }
     &__paid {
+      margin-top: 5px;
+      gap: 5px;
       img {
         height: 19px;
         width: auto;
@@ -4127,7 +4253,7 @@ h4 {
     font-size: 12px;
     .container {
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
     }
   }
 }
@@ -4178,6 +4304,7 @@ h4 {
       width: 71px;
     }
     &__paid {
+      margin-bottom: 10px;
       column-gap: 15px;
       img {
         height: 42px;
