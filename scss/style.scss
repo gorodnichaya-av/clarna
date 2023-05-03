@@ -1414,7 +1414,7 @@ h4 {
 @media (min-width: 1280px) {
   .banner {
     padding-top: 65px;
-    padding-bottom: 98px;
+    padding-bottom: 88px;
     &:before {
       bottom: 40px;
     }
@@ -1459,7 +1459,7 @@ h4 {
           }
           .banner__clarna {
             left: 45%;
-            bottom: -220px;
+            bottom: -210px;
           }
           .banner__days {
             right: 80px;
@@ -1479,7 +1479,7 @@ h4 {
     &__clarna {
       max-width: unset;
       width: 640px;
-      bottom: -230px;
+      bottom: -220px;
     }
     &__days {
       width: 142px;
@@ -1702,6 +1702,13 @@ h4 {
   }
 }
 @media (min-width: 1281px) {
+  .banner {
+    &:not(.banner--slider) {
+      & + .promotion {
+        margin-top: -10px;
+      }
+    }
+  }
   .promotion {
     .inline {
       &__icon {
