@@ -4104,7 +4104,7 @@ h4 {
     margin-bottom: 20px;
     gap: 7px;
     &__title {
-      padding: 7px 40px 7px 15px;
+      padding: 15px 40px 15px 15px;
       font-size: 17px;
       &:after {
         right: 15px;
@@ -4192,7 +4192,7 @@ h4 {
     .inline {
       row-gap: 10px;
       img {
-        width: 35px;
+        width: 39px;
       }
     }
   }
@@ -4203,6 +4203,7 @@ h4 {
       font-size: 18px;
       img {
         width: 47px;
+        margin-right: 8px;
       }
     }
   }
@@ -4214,10 +4215,6 @@ h4 {
         flex-direction: row;
         align-items: center;
         text-align: left;
-        img {
-          transform: scale(0.72);
-          margin-right: 5px;
-        }
       }
     }
   }
@@ -4235,6 +4232,12 @@ h4 {
     .inline {
       font-size: 21px;
       gap: 40px;
+      &__item {
+        img {
+          transform: scale(0.72);
+          margin-right: 5px;
+        }
+      }
     }
   }
 }
@@ -4313,6 +4316,8 @@ h4 {
       padding-bottom: 34px;
     }
     &__navs {
+      margin-left: -20px;
+      margin-right: -20px;
       margin-top: 17px;
       a {
         margin-left: 10px;
@@ -4320,13 +4325,13 @@ h4 {
       }
     }
     &__logo {
-      width: 167px;
+      width: 197px;
     }
     &__btn {
-      height: 53px;
+      height: 63px;
       margin-top: 25px;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 26px;
+      padding-right: 26px;
       font-size: 24px;
     }
     &__logos {
@@ -4339,7 +4344,7 @@ h4 {
       }
     }
     &__dbd {
-      width: 99px;
+      width: 100px;
     }
     &__approved {
       width: 91px;
@@ -4402,6 +4407,8 @@ h4 {
     &__btn {
       margin-top: 32px;
       margin-bottom: 32px;
+      height: 81px;
+      width: 313px;
     }
     &__logo {
       width: 202px;
