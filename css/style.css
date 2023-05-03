@@ -208,17 +208,21 @@ img {
   .headline-wrap h2 + * {
     margin-top: 10px;
   }
+  .steps-headline img {
+    -webkit-transform: scale(0.72);
+            transform: scale(0.72);
+  }
   .steps-headline__clarna {
-    left: 100%;
-    bottom: -50px;
+    left: 85%;
+    bottom: -150px;
   }
   .steps-headline__clarna-brush {
-    right: 100%;
-    bottom: -50px;
+    right: 84%;
+    bottom: -130px;
   }
   .steps-headline:before, .steps-headline:after {
-    width: 83px;
-    height: 100px;
+    width: 63px;
+    height: 80px;
   }
   .steps-headline .headline-wrap {
     max-width: 700px;
@@ -1752,6 +1756,11 @@ h4 {
   .inline {
     font-size: 20px;
   }
+  .inline__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
   .inline__icon.bg-light-pink {
     width: 90px;
     height: 90px;
@@ -1895,7 +1904,6 @@ h4 {
   padding-right: 18px;
   padding-bottom: 20px;
   padding-top: 10px;
-  line-height: 1.28;
 }
 
 .card__title {
@@ -2026,10 +2034,10 @@ h4 {
     font-size: 16px;
   }
   .card__number {
-    width: 109px;
-    height: 109px;
-    font-size: 70px;
-    margin-top: -70px;
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    margin-top: -50px;
   }
   .card h3 {
     font-size: 28px;
@@ -2130,6 +2138,8 @@ h4 {
 
 @media (max-width: 767px) {
   .ingredients-section .inline {
+    margin-left: -15px;
+    margin-right: -15px;
     margin-top: 23px;
   }
   .ingredients-section .inline__icon {
@@ -2138,6 +2148,12 @@ h4 {
   .ingredients-section .inline img {
     max-height: 57px;
     width: auto;
+  }
+  .ingredients-section .inline h5 {
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 1.3;
+    font-size: 13px;
   }
   .ingredients-slider {
     margin-top: 25px;
@@ -2149,7 +2165,30 @@ h4 {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1280px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+  .ingredients-section .inline {
+    margin-top: 32px;
+    margin-bottom: 50px;
+  }
+  .ingredients-section .inline__icon {
+    min-height: 57px;
+  }
+  .ingredients-section .inline img {
+    max-height: 57px;
+    width: auto;
+  }
+  .ingredients-section .inline br {
+    display: none;
+  }
+  .ingredients-section .inline h5 {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 16px;
+    line-height: 1.3;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
   .ingredients-section .inline {
     margin-top: 22px;
     margin-bottom: 50px;
@@ -2161,6 +2200,18 @@ h4 {
     max-height: 77px;
     width: auto;
   }
+  .ingredients-section .inline br {
+    display: none;
+  }
+  .ingredients-section .inline h5 {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    line-height: 1.3;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
   .ingredients-slider {
     margin-top: 32px;
     margin-bottom: 40px;
@@ -2178,6 +2229,13 @@ h4 {
   .ingredients-section .inline {
     margin-top: 28px;
     margin-bottom: 70px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .ingredients-section .inline img {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
   }
   .ingredients-slider {
     margin-top: 55px;
@@ -2305,6 +2363,10 @@ h4 {
 }
 
 /***** premium-skincare *****/
+.science {
+  overflow: hidden;
+}
+
 .premium-skincare__images {
   position: relative;
 }
@@ -2327,6 +2389,7 @@ h4 {
   text-align: left;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-size: 1.15em;
 }
 
 @media (max-width: 767px) {
@@ -2426,7 +2489,7 @@ h4 {
 }
 
 .percents .progress {
-  height: 20px;
+  height: 16px;
   width: 100%;
   margin-bottom: 16px;
   border-radius: 10px;
@@ -2454,7 +2517,7 @@ h4 {
     margin-right: auto;
   }
   .percents__number {
-    font-size: 36px;
+    font-size: 48px;
   }
 }
 
@@ -2498,13 +2561,20 @@ h4 {
     margin-top: 20px;
   }
   .percents__number {
+    margin-top: 20px;
+    margin-bottom: 5px;
     text-align: center;
+    line-height: 1;
   }
   .percents h5 {
     font-size: 18px;
   }
   .percents .progress {
     height: 13px;
+    width: 253px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
   }
 }
 
@@ -2633,7 +2703,7 @@ h4 {
     position: absolute;
     top: 0;
     right: 0;
-    width: 42%;
+    width: 45%;
   }
   .premium-skincare__plus {
     margin-top: 40px;
@@ -2648,19 +2718,18 @@ h4 {
     padding-left: 37px;
     padding-right: 37px;
   }
-}
-
-@media (min-width: 1281px) and (max-width: 1559px) {
   .premium-skincare__images {
     padding-bottom: 120px;
   }
   .premium-skincare__cliniclly {
     width: 270px;
-    bottom: 30px;
+    bottom: 12px;
   }
   .premium-skincare__clarna {
     position: absolute;
-    width: 380px;
+    width: 450px;
+    right: -73px;
+    bottom: -23px;
   }
   .premium-skincare__pluses {
     display: -webkit-box;
@@ -2673,54 +2742,9 @@ h4 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-}
-
-@media (min-width: 1560px) and (max-width: 1679px) {
-  .premium-skincare__images {
-    padding-bottom: 150px;
-  }
-  .premium-skincare__cliniclly {
-    width: 316px;
-    bottom: 30px;
-  }
-  .premium-skincare__clarna {
-    position: absolute;
-    width: 460px;
-  }
-  .premium-skincare__pluses {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-@media (min-width: 1680px) {
-  .premium-skincare__images {
-    padding-bottom: 250px;
-  }
-  .premium-skincare__desc {
-    padding-bottom: 200px;
-  }
-  .premium-skincare__cliniclly {
-    left: -70px;
-    bottom: 50px;
-  }
-  .premium-skincare__clarna {
-    right: -109px;
-  }
-  .premium-skincare__pluses {
-    margin-top: 50px;
   }
   .percents__number {
-    font-size: 36px;
+    font-size: 50px;
   }
   .percents__item {
     margin-top: 20px;
@@ -2729,13 +2753,105 @@ h4 {
     padding-right: 50px;
   }
   .percents h5 {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 
+/*@media (min-width: 1281px) and (max-width: 1559px) {
+  .premium-skincare {
+    &__images {
+      padding-bottom: 120px;
+    }
+    &__cliniclly { 
+      width: 270px;
+      bottom: 30px;
+    }
+    &__clarna {
+      position: absolute;
+      width: 380px;
+    }
+    &__pluses {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+@media (min-width: 1560px) and (max-width: 1679px) {
+  .premium-skincare {
+    &__images {
+      padding-bottom: 150px;
+    }
+    &__cliniclly {
+      width: 316px;
+      bottom: 30px;
+    }
+    &__clarna {
+      position: absolute;
+      width: 460px;
+    }
+    &__pluses {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+@media (min-width: 1680px) {
+  .premium-skincare {
+    &__images {
+      padding-bottom: 250px;
+    }
+    &__desc {
+      padding-bottom: 200px;
+    }
+    &__cliniclly {
+      left: -70px;
+      bottom: 50px;
+    }
+    &__clarna {
+      right: -109px;
+    }
+    &__pluses {
+      margin-top: 50px;
+    }
+  }
+
+  .percents {
+    &__number {
+      font-size: 36px;
+    }
+    &__item {
+      margin-top: 20px;
+      margin-bottom: 112px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    h5 {
+      font-size: 28px;
+    }
+  }
+}*/
 /***** steps-to-use *****/
 .steps-to-use h3 {
   margin-bottom: 20px;
+}
+
+.steps-to-use .text-md {
+  font-size: 1.05em;
+}
+
+.steps .inline {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.steps .inline__item {
+  -webkit-box-flex: unset;
+      -ms-flex: unset;
+          flex: unset;
 }
 
 @media (max-width: 1023px) {
@@ -2764,9 +2880,18 @@ h4 {
   .steps-to-use {
     margin-top: 40px;
   }
+  .steps-to-use .card__desc {
+    line-height: 1.56;
+  }
   .steps-to-use .card h3 {
     font-size: 20px;
     line-height: 1.4;
+  }
+}
+
+@media (min-width: 768px) {
+  .steps-to-use .card__desc {
+    line-height: 1.28;
   }
 }
 
@@ -2790,9 +2915,6 @@ h4 {
   .steps .inline {
     margin-top: 30px;
   }
-  .steps .inline__icon {
-    min-height: 65px;
-  }
   .steps .inline img {
     max-height: 65px;
   }
@@ -2814,7 +2936,7 @@ h4 {
 @media (min-width: 1281px) {
   .steps-to-use {
     margin-top: 90px;
-    margin-bottom: 93px;
+    margin-bottom: 65px;
     gap: 20px;
   }
   .steps-to-use .card {
@@ -2823,6 +2945,13 @@ h4 {
   .steps-to-use .card h3 {
     line-height: 1.1;
     font-size: 28px;
+  }
+  .steps .inline__icon + h5 {
+    margin-top: -3px;
+  }
+  .steps .inline img {
+    -webkit-transform: scale(0.72);
+            transform: scale(0.72);
   }
 }
 
@@ -3058,6 +3187,7 @@ h4 {
 @media (min-width: 1024px) and (max-width: 1280px) {
   .introducing__desc {
     padding-left: 180px;
+    font-size: 30px;
   }
   .introducing .text-lg {
     font-size: 30px;
@@ -3071,6 +3201,7 @@ h4 {
     padding-right: 35px;
     margin-top: 90px;
     margin-bottom: 60px;
+    min-height: 250px;
   }
   .introducing__doctor {
     width: 293px;
@@ -3324,6 +3455,8 @@ h4 {
     font-size: 26px;
   }
   .check-line__item {
+    margin-left: 20px;
+    margin-right: 20px;
     padding-left: 27px;
     background-size: 22px auto;
   }
@@ -3566,10 +3699,13 @@ h4 {
     margin-right: auto;
   }
   .guarantee__img {
-    width: 280px;
-    height: 280px;
-    top: -140px;
-    margin-bottom: -110px;
+    width: 200px;
+    height: 200px;
+    top: -100px;
+    margin-bottom: -70px;
+  }
+  .guarantee__img img {
+    width: 180px;
   }
 }
 
@@ -3586,37 +3722,26 @@ h4 {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1639px) {
-  .guarantee-logos img {
-    height: 130px;
-    width: auto;
-  }
-  .guarantee-logos h5 {
-    font-size: 20px;
-    line-height: 1.1;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1280px) {
-  .guarantee {
-    max-width: calc(100% - 200px);
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 @media (min-width: 1281px) {
   .guarantee {
     margin-bottom: 90px;
+    width: calc(100% - 560px);
+    margin-left: auto;
+    margin-right: auto;
   }
   .guarantee__text {
     padding-bottom: 50px;
   }
+  .guarantee__signin {
+    height: 78px;
+  }
   .guarantee h3 {
     line-height: 1.16;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .guarantee p {
-    font-size: 28px;
+    font-size: 23px;
   }
   .guarantee-logos__logo {
     position: absolute;
@@ -3632,30 +3757,21 @@ h4 {
             transform: translateY(-50%);
   }
   .guarantee-logos__logo:nth-child(5), .guarantee-logos__logo:nth-child(6) {
-    bottom: 0;
+    bottom: 10px;
   }
   .guarantee-logos__logo:nth-child(1), .guarantee-logos__logo:nth-child(3), .guarantee-logos__logo:nth-child(6) {
-    left: -10px;
+    right: calc(100% + 10px);
   }
   .guarantee-logos__logo:nth-child(2), .guarantee-logos__logo:nth-child(4), .guarantee-logos__logo:nth-child(5) {
-    right: -10px;
+    left: calc(100% + 10px);
+  }
+  .guarantee-logos__logo img {
+    -webkit-transform: scale(0.72);
+            transform: scale(0.72);
   }
   .guarantee-logos__logo h5 {
-    font-size: 24px;
-  }
-}
-
-@media (min-width: 1281px) and (max-width: 1639px) {
-  .guarantee__text {
-    width: calc(100% - 500px);
-  }
-}
-
-@media (min-width: 1640px) {
-  .guarantee__text {
-    width: calc(100% - 800px);
-  }
-  .guarantee h5 {
+    margin-top: -15px;
+    font-size: 22px;
     line-height: 1.2;
   }
 }
