@@ -580,6 +580,7 @@ a {
 }
 .text-regular {
   font-weight: 400;
+  font-family: "IBMPlexSansThai-Regular", sans-serif;
 }
 .text-bold {
   font-weight: 700;
@@ -1920,7 +1921,7 @@ h4 {
       margin-top: -70px;
     }
     h3 {
-      font-size: 40px;
+      font-size: 28px;
     }
   }
 }
@@ -1944,6 +1945,9 @@ h4 {
     @include border-radius;
     overflow: hidden;
   }
+  .card__desc {
+    line-height: 1.5;
+  }
 }
 .benefits-section {
   .inline {
@@ -1960,6 +1964,11 @@ h4 {
   .benefits {
     margin-top: 25px;
     gap: 10px;
+    .card {
+      h3 {
+        margin-bottom: 8px;
+      }
+    }
   }
 }
 @media (min-width: 768px) and (max-width: 1280px) {
