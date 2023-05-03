@@ -1226,7 +1226,7 @@ h4 {
   height: 100%;
 }
 
-.banner__womans {
+.banner__women {
   position: relative;
   max-width: unset;
   z-index: 2;
@@ -1351,27 +1351,29 @@ h4 {
     margin-bottom: 60px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
   }
   .banner__woman-wrap--collage {
     margin-top: 20px;
     padding-bottom: 150px;
   }
-  .banner__womans {
-    width: 100%;
+  .banner__women {
+    width: calc(100% + 30px);
+    margin-left: -15px;
   }
   .banner__roses {
     width: 520px;
     bottom: -80px;
   }
   .banner__clarna {
-    width: 375px;
+    max-width: unset;
+    width: 400px;
     bottom: -120px;
   }
   .banner__days {
     width: 85px;
-    right: 16%;
-    bottom: 125px;
+    right: 8%;
+    bottom: 103px;
   }
   .banner__slider {
     margin-left: -20px;
@@ -1402,7 +1404,7 @@ h4 {
 
 @media (min-width: 768px) {
   .banner__list {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .banner__info img {
     width: 115px;
@@ -1424,35 +1426,42 @@ h4 {
     bottom: 0;
   }
   .banner__woman {
-    width: 1029px;
+    width: 860px;
     margin-top: -50px;
+    margin-left: 20px;
   }
   .banner__woman-wrap {
+    width: 728px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     z-index: 2;
-    padding-bottom: 200px;
+    padding-bottom: 150px;
   }
   .banner__woman-wrap--collage {
     margin-top: 20px;
-    padding-bottom: 315px;
+    padding-bottom: 190px;
   }
-  .banner__womans {
+  .banner__women {
     width: calc(100% + 40px);
     left: -20px;
   }
   .banner__roses {
-    width: 1032px;
-    bottom: -100px;
+    width: 932px;
+    bottom: -120px;
+    left: 52%;
   }
   .banner__clarna {
-    width: 786px;
+    width: 680px;
     bottom: -176px;
   }
   .banner__days {
     width: 160px;
-    right: 22%;
-    bottom: 240px;
+    right: 14%;
+    bottom: 190px;
   }
   .banner__info {
+    margin-top: 25px;
     font-size: 28px;
   }
   .check-list li {
@@ -1471,6 +1480,7 @@ h4 {
 @media (min-width: 1280px) {
   .banner {
     padding-top: 65px;
+    padding-bottom: 98px;
   }
   .banner:before {
     bottom: 40px;
@@ -1502,7 +1512,7 @@ h4 {
   }
   .banner__woman {
     position: relative;
-    top: -55px;
+    top: -105px;
     margin-left: 0;
     width: 800px;
   }
@@ -1510,30 +1520,40 @@ h4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    padding-bottom: 220px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     right: -20px;
   }
-  .banner__woman-wrap--collage {
-    padding-bottom: 300px;
+  .banner__woman-wrap--collage .banner__roses {
+    width: calc(100% + 230px);
+    bottom: -142px;
   }
-  .banner__womans {
-    width: 632px;
+  .banner__woman-wrap--collage .banner__clarna {
+    left: 45%;
+    bottom: -220px;
+  }
+  .banner__woman-wrap--collage .banner__days {
+    right: 80px;
+    bottom: 120px;
+  }
+  .banner__women {
+    width: 680px;
+    left: -60px;
   }
   .banner__roses {
-    width: calc(100% + 350px);
-    bottom: -58px;
+    width: calc(100% + 300px);
+    bottom: -154px;
   }
   .banner__clarna {
     max-width: unset;
     width: 640px;
-    bottom: -120px;
+    bottom: -230px;
   }
   .banner__days {
-    right: 90px;
-    bottom: 180px;
+    width: 142px;
+    right: 70px;
+    bottom: 130px;
   }
   .banner__slider {
     padding-right: 57px;
@@ -1559,19 +1579,30 @@ h4 {
   .banner .desktop-hidden {
     display: none !important;
   }
+  .banner .desktop-visible {
+    display: block !important;
+  }
   .check-list {
+    margin-top: 10px;
     font-size: 24px;
   }
   .check-list li {
     padding-right: 20px;
+    line-height: 1.2;
   }
   .check-list li:before {
-    width: 30px;
-    height: 33px;
-    margin-right: 20px;
+    width: 25px;
+    height: 30px;
+    margin-right: 15px;
   }
   .check-list li + li {
-    margin-top: 16px;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .banner__women {
+    top: 20px;
   }
 }
 
@@ -1580,7 +1611,7 @@ h4 {
     &__days {
       width: 150px;
     }
-    &__womans {
+    &__women {
       width: 100%;
     }
   }
@@ -1609,7 +1640,7 @@ h4 {
         }
       }
     }
-    &__womans {
+    &__women {
       width: 939px;
       left: -45px;
       top: -50px;
@@ -1751,7 +1782,6 @@ h4 {
     margin-top: 13px;
   }
   .promotion {
-    padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 25px;
   }
