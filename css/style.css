@@ -87,6 +87,10 @@ body {
   text-align: center;
 }
 
+.symptoms-section .headline-wrap {
+  max-width: 780px;
+}
+
 .steps-headline {
   position: relative;
 }
