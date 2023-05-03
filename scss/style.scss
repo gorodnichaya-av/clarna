@@ -1565,7 +1565,7 @@ h4 {
   }
 
   h5 {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 500;
   }
 }
@@ -1598,7 +1598,6 @@ h4 {
     }
 
     h5 {
-      font-size: 12px;
       margin-left: -4px;
       margin-right: -4px;
       br {
@@ -1637,7 +1636,7 @@ h4 {
     padding-bottom: 20px;
     margin-top: 25px;
     .inline__icon {
-      height: 115px !important;
+      height: 115px;
     }
     img {
       height: 115px;
@@ -1662,8 +1661,11 @@ h4 {
     font-size: 20px;
     &__icon {
       &.bg-light-pink {
-        width: 120px;
-        height: 120px !important;
+        width: 90px;
+        height: 90px;
+        img {
+          transform: scale(0.72);
+        }
       }
       & + * {
         margin-top: 18px;
@@ -1947,12 +1949,13 @@ h4 {
   }
   .card__desc {
     line-height: 1.5;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 .benefits-section {
   .inline {
     margin-top: 36px;
-    margin-bottom: 76px;
   }
 }
 @media (max-width: 767px) {
@@ -1977,12 +1980,22 @@ h4 {
     gap: 38px;
     grid-template-columns: repeat(2, 1fr);
   }
+  .benefits-section {
+    .inline {
+      margin-bottom: 76px;
+    }
+  }
 }
 @media (min-width: 1281px) {
   .benefits {
     margin-top: 50px;
     gap: 16px;
     grid-template-columns: repeat(3, 1fr);
+  }
+  .benefits-section {
+    .inline {
+      margin-bottom: 56px;
+    }
   }
 }
 
@@ -2717,6 +2730,10 @@ h4 {
     position: absolute;
     z-index: 3;
   }
+  h4 {
+    font-weight: 500;
+    font-family: "IBMPlexSansThai-Medium", sans-serif;
+  }
 }
 @media (max-width: 1280px) {
   .ingredients { 
@@ -2876,31 +2893,44 @@ h4 {
     justify-content: center;
     align-items: center;
     &__name {
-      width: calc(100% - 24px);
-      padding-left: 15px;
-      padding-right: 17px;
+      width: calc(100% - 34px);
+      padding-left: 3px;
+      padding-right: 5px;
+      padding-top: 5px;
+      padding-bottom: 10px;
     }
     &__gurantee {
       bottom: 384px;
       right: 300px;
     }
+    &__clarna {
+      padding-top: 375px;
+      img:not(.ingredients__gurantee) {
+        width: 1100px;
+      }
+    }
     &__item {
+      width: 275px;
       position: absolute;
       &:nth-child(1),
       &:nth-child(2) {
         top: 0;
       }
       &:nth-child(1) {
-        right: calc(50% + 17px);
+        right: calc(50% + 15px);
       }
       &:nth-child(2) {
-        left: calc(50% + 17px);
+        left: calc(50% + 15px);
       }
       &:nth-child(3) {
-        left: 115px;
+        left: 70px;
       }
       &:nth-child(4) {
-        right: 115px;
+        right: 70px;
+      }
+      &:nth-child(3),
+      &:nth-child(4) {
+        top: 260px;
       }
       &:nth-child(5) {
         left: -20px;
@@ -2911,11 +2941,18 @@ h4 {
           width: auto;
         }
       }
+      &:nth-child(5),
+      &:nth-child(6) {
+        bottom: 200px;
+      }
+    }
+    h4 {
+      font-size: 24px;
     }
   }
 }
 
-@media (min-width: 1281px) and (max-width: 1639px) {
+/*@media (min-width: 1281px) and (max-width: 1639px) {
   .ingredients {
     padding-top: 300px;
     &__clarna {
@@ -2953,7 +2990,7 @@ h4 {
       }
     }
   }
-}
+}*/
 
 /***** check-line *****/
 @keyframes horizontalScroll {

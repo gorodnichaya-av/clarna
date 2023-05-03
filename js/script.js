@@ -193,10 +193,10 @@ $(function () {
       addPremiumScareHeight();
       addHeightPticingList($('.js-pricing-count'));
 
-      $('.inline').each(function() {
+      /*$('.inline').each(function() {
         const inlineElem = $(this).find('.inline__icon');
         addHeightPticingList(inlineElem);
-      }); 
+      }); */
     });
 
     // Payment discount
