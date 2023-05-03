@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 @font-face {
   font-family: "IBMPlexSansThai-Bold";
   src: url("../fonts/IBMPlexSansThai-Bold.woff2") format("woff2"), url("../fonts/IBMPlexSansThai-Bold.woff") format("woff");
@@ -543,8 +544,8 @@ img {
     border-bottom: 19px solid transparent;
   }
   .btn--white-grey {
-    height: 72px;
-    width: 295px;
+    height: 54px;
+    width: 212px;
   }
   .btn--pink-white, .btn--transparent-pink {
     height: 75px;
@@ -3824,7 +3825,7 @@ h4 {
 }
 
 .avarage-rating__val, .avarage-rating__percent {
-  font-family: "IBMPlexSansThai-SemiBold", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
 }
 
@@ -3838,8 +3839,10 @@ h4 {
           align-items: center;
 }
 
-.avarage-rating .text-sm {
-  line-height: 1.35;
+.avarage-rating .text-md {
+  line-height: 1.18;
+  font-family: "IBMPlexSansThai-Medium", sans-serif;
+  font-weight: 500;
 }
 
 .avarage-rating .rating__value {
@@ -3877,6 +3880,14 @@ h4 {
     text-align: center;
     font-size: 20px;
   }
+  .avarage-rating__general-value p {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  .avarage-rating__general-value .rating__star {
+    width: 20px;
+    height: 20px;
+  }
   .avarage-rating__content {
     padding: 15px 10px 40px;
     -webkit-box-orient: vertical;
@@ -3886,6 +3897,9 @@ h4 {
   }
   .avarage-rating__val {
     font-size: 40px;
+  }
+  .avarage-rating__text {
+    margin-top: 20px;
   }
   .avarage-rating__percent {
     font-size: 36px;
@@ -3913,6 +3927,12 @@ h4 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .avarage-rating .text-md {
+    font-size: 1em;
   }
 }
 
@@ -3972,8 +3992,7 @@ h4 {
     padding: 40px;
   }
   .avarage-rating__val {
-    font-size: 60px;
-    font-weight: 600;
+    font-size: 72px;
     line-height: 1.2;
   }
   .avarage-rating__percent {
@@ -3994,7 +4013,7 @@ h4 {
   }
   .avarage-rating .rating {
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 }
 
@@ -4257,7 +4276,8 @@ h4 {
 .pricing__total {
   line-height: 1.2;
   font-weight: 700;
-  font-family: "IBMPlexSansThai-Bold", sans-serif;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
 }
 
 .pricing__promotion {
@@ -4417,20 +4437,26 @@ h4 {
   }
   .pricing__img {
     height: 150px;
-    margin-top: 10px;
-    margin-bottom: 14px;
+    margin-top: 20px;
   }
   .pricing__gifts {
+    gap: 8px;
     margin-top: 53px;
+    margin-left: -12px;
+    margin-right: -12px;
   }
   .pricing__gift:after {
     width: 40px;
     height: 40px;
     font-size: 13px;
   }
+  .pricing__counting {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .pricing__count {
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 17px;
     height: unset !important;
   }
   .pricing__count-line {
@@ -4443,13 +4469,13 @@ h4 {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    font-size: 20px;
+    font-size: 22px;
   }
   .pricing__promotion {
     margin-bottom: 15px;
-    font-size: 20px;
-    background-size: 25px auto;
-    padding-left: 33px;
+    font-size: 24px;
+    background-size: 36px auto;
+    padding-left: 43px;
     padding-top: 2px;
   }
   .pricing__shipping {
@@ -4460,14 +4486,14 @@ h4 {
     width: 12px;
   }
   .pricing__total {
-    font-size: 36px;
+    font-size: 68px;
   }
   .pricing h3 {
-    margin-top: 20px;
+    margin-top: 25px;
     font-size: 35px;
   }
   .pricing .text-green {
-    font-size: 20px;
+    font-size: 26px;
   }
   .pricing .btn {
     height: 57px;
