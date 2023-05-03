@@ -64,6 +64,7 @@ $(function () {
       if(windowWidth < 1024) {
         $('.js-menu').slideUp();
         $('.js-menu-btn').removeClass('opened');
+        $('.js-sticky-btn').fadeIn();
       }
     });
 

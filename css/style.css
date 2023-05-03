@@ -1883,10 +1883,11 @@ h4 {
 
 .card__desc {
   position: relative;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 18px;
+  padding-right: 18px;
   padding-bottom: 20px;
   padding-top: 10px;
+  line-height: 1.28;
 }
 
 .card__title {
@@ -1901,8 +1902,9 @@ h4 {
 }
 
 .card__meta h5 {
-  margin-right: 10px;
+  margin-right: 5px;
   font-family: "IBMPlexSansThai-SemiBold", sans-serif;
+  font-weight: 600;
 }
 
 .card__photo img {
@@ -1953,7 +1955,7 @@ h4 {
 }
 
 .card__rating {
-  margin-bottom: 5px;
+  margin-bottom: 12px;
 }
 
 .card h3 {
@@ -2013,7 +2015,7 @@ h4 {
 
 @media (min-width: 1281px) {
   .card__meta h5 {
-    font-size: 18px;
+    font-size: 16px;
   }
   .card__number {
     width: 109px;
@@ -2027,17 +2029,17 @@ h4 {
 }
 
 .verified {
-  padding-left: 25px;
+  padding-left: 20px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #51CC05;
+  color: #00CF66;
   line-height: 1;
-  font-size: 14px;
-  background: url(../img/Icons/verified.svg) no-repeat 0 50%;
+  font-size: 12px;
+  background: url(../img/Icons/verified.svg) no-repeat 0 50%/16px auto;
 }
 
 /***** benefits ******/
@@ -2177,8 +2179,17 @@ h4 {
   padding-bottom: 0;
 }
 
+.testimonials .card__content {
+  font-weight: 400;
+  font-family: "IBMPlexSansThai-Regular", sans-serif;
+}
+
+.testimonials .card__desc {
+  padding-bottom: 10px;
+}
+
 .testimonials .card__meta {
-  margin-top: 12px;
+  margin-top: 15px;
 }
 
 @media (max-width: 1023px) {
@@ -2261,7 +2272,10 @@ h4 {
     grid-template-columns: repeat(4, 1fr);
   }
   .testimonials .card__title {
-    font-size: 28px;
+    font-size: 21px;
+  }
+  .testimonials .card__content {
+    font-size: 18px;
   }
   .add-review {
     margin-bottom: 38px;
@@ -3571,15 +3585,27 @@ h4 {
 
 /***** avarage-rating ******/
 .avarage-rating {
-  border-radius: 20px;
   -webkit-box-shadow: 3px 3px 9px rgba(122, 56, 56, 0.36);
           box-shadow: 3px 3px 9px rgba(122, 56, 56, 0.36);
+}
+
+@media (max-width: 767px) {
+  .avarage-rating {
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .avarage-rating {
+    border-radius: 15px;
+  }
 }
 
 .avarage-rating__title {
   background-color: #E12058;
   color: #fff;
-  border-radius: 20px 20px 0 0;
+  border-radius: 17px 17px 0 0;
+  line-height: 1;
 }
 
 .avarage-rating__content {
@@ -3650,7 +3676,6 @@ h4 {
   .avarage-rating {
     margin-top: 20px;
     margin-bottom: 32px;
-    border-radius: 10px;
   }
   .avarage-rating__title {
     border-radius: 10px 10px 0 0;
