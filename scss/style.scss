@@ -608,7 +608,7 @@ a {
   font-family: "IBMPlexSansThai-Regular", sans-serif;
   font-weight: 400;
   line-height: 1.78;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 .text-md {
   font-size: 1.2em;
@@ -2662,10 +2662,10 @@ h4 {
       bottom: -5px;
       border-radius: 50%;
       background-color: $pink;
-      z-index: -1;
       box-shadow: 7px -2px 6px rgba(163, 88, 88, 0.42);
     }
     img {
+      position: relative;
       border: 4px solid $white;
       border-radius: 50%;
       display: block;
@@ -2695,6 +2695,7 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
+    white-space: nowrap;
     &:before {
       content: "";
       position: absolute;
@@ -2795,30 +2796,43 @@ h4 {
     }
   }
 }
-@media (min-width: 768px) {
-  .introducing {
-    &__desc {
-      margin-left: 130px;
-    }
-    &__doctor {
-      left: -130px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  }
-
+@media (min-width: 768px) and (max-width: 991px) {
   .ingredients {
     &__name {
-      white-space: nowrap;
+      height: 42px;
+      font-size: 19px;
+      border-radius: 12px;
+      &:before {
+        border-radius: 12px;
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .introducing {
+    &__desc {
+      margin-left: 100px;
+      padding-left: 200px;
+      font-size: 22px;
+    }
+    &__doctor {
+      left: -100px;
+    }
+  }
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .introducing {
+    &__desc {
+      padding-left: 180px;
+    }
+    .text-lg {
+      font-size: 30px;
     }
   }
 }
 @media (min-width: 768px) and (max-width: 1280px) {
   .introducing {
     &__desc {
-      min-height: 279px;
-      font-size: 30px;
-      padding-left: 180px;
       padding-top: 30px;
       padding-bottom: 30px;
       padding-right: 35px;
@@ -2843,6 +2857,13 @@ h4 {
       font-size: 23px;
     }
     &__item {
+      &:last-child {
+        .ingredients__name {
+          width: auto;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
       img {
         width: 258px;
       }
@@ -2859,30 +2880,40 @@ h4 {
     }
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 1024px) {
+  .introducing {
+    &__desc {
+      margin-left: 130px;
+    }
+    &__doctor {
+      left: -130px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
   .ingredients {
     &__name {
-      height: 42px;
-      font-size: 19px;
-      border-radius: 12px;
-      &:before {
-        border-radius: 12px;
-      }
+      white-space: nowrap;
     }
   }
 }
 @media (min-width: 1281px) {
   .introducing {
     &__desc {
-      min-height: 360px;
-      margin-top: 75px;
+      margin-top: 35px;
       margin-bottom: 120px;
-      padding-left: 337px;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      padding-right: 50px;
-      font-size: 40px;
+      padding-left: 238px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      padding-right: 30px;
+      font-size: 30px;
       line-height: 1.53;
+    }
+    &__doctor {
+      img {
+        width: 315px;
+      }
     }
   }
 
@@ -2904,23 +2935,23 @@ h4 {
       right: 300px;
     }
     &__clarna {
-      padding-top: 375px;
+      padding-top: 350px;
       img:not(.ingredients__gurantee) {
         width: 1100px;
       }
     }
     &__item {
-      width: 275px;
+      width: 250px;
       position: absolute;
       &:nth-child(1),
       &:nth-child(2) {
         top: 0;
       }
       &:nth-child(1) {
-        right: calc(50% + 15px);
+        right: calc(50% + 10px);
       }
       &:nth-child(2) {
-        left: calc(50% + 15px);
+        left: calc(50% + 10px);
       }
       &:nth-child(3) {
         left: 70px;
@@ -2930,20 +2961,20 @@ h4 {
       }
       &:nth-child(3),
       &:nth-child(4) {
-        top: 260px;
+        top: 200px;
       }
       &:nth-child(5) {
-        left: -20px;
+        left: -40px;
       }
       &:nth-child(6) {
-        right: -20px;
+        right: -40px;
         .ingredients__name {
           width: auto;
         }
       }
       &:nth-child(5),
       &:nth-child(6) {
-        bottom: 200px;
+        top: 480px;
       }
     }
     h4 {
@@ -3015,7 +3046,6 @@ h4 {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  overflow-x: auto;
   transition: all 0.3s;
   animation: 20s horizontalScroll linear infinite;
   &__item {
@@ -3034,10 +3064,12 @@ h4 {
 @media (max-width: 767px) {
   .check-line {
     height: 50px;
-    font-size: 18px;
+    font-size: 21px;
     &__item {
       padding-left: 25px;
       padding-right: 25px;
+      margin-left: 20px;
+      margin-right: 20px;
       background-size: 18px auto;
     }
   }
