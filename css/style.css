@@ -4509,6 +4509,8 @@ h4 {
 .accordion__title {
   position: relative;
   cursor: pointer;
+  font-weight: 600;
+  font-family: "IBMPlexSansThai-SemiBold", sans-serif;
 }
 
 .accordion__title:after {
@@ -4526,6 +4528,8 @@ h4 {
   padding-top: 12px;
   padding-bottom: 12px;
   border-top: 2px solid #484848;
+  font-weight: 400;
+  font-family: "IBMPlexSansThai-Regular", sans-serif;
 }
 
 .accordion__content strong {
@@ -4597,11 +4601,11 @@ h4 {
     margin-bottom: 50px;
   }
   .accordion__title {
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding-top: 13px;
+    padding-bottom: 13px;
     padding-left: 50px;
     padding-right: 50px;
-    font-size: 26px;
+    font-size: 24px;
   }
   .accordion__content {
     padding-left: 50px;
