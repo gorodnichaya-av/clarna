@@ -3295,7 +3295,7 @@ h4 {
   gap: 15px;
 }
 .symptom {
-  border: 4px solid #E93D31;
+  border: 4px solid $red;
   overflow: hidden;
   @include border-radius;
   &__img {
@@ -3306,7 +3306,7 @@ h4 {
   }
   &__title {
     text-align: center;
-    background-color: #E93D31;
+    background-color: $red;
     color: $white;
     padding: 10px 5px;
   }

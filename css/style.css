@@ -3539,7 +3539,7 @@ h4 {
 }
 
 .symptom {
-  border: 4px solid #E93D31;
+  border: 4px solid #FF2B2B;
   overflow: hidden;
 }
 
@@ -3562,7 +3562,7 @@ h4 {
 
 .symptom__title {
   text-align: center;
-  background-color: #E93D31;
+  background-color: #FF2B2B;
   color: #fff;
   padding: 10px 5px;
 }
