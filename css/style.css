@@ -4727,17 +4727,9 @@ h4 {
 }
 
 .footer__btn {
-  height: 84px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 32px;
-  font-family: "IBMPlexSansThai-Bold", sans-serif;
-  white-space: nowrap;
-  background-color: #00C200;
+  display: inline-block;
+  width: 373px;
+  height: 113px;
 }
 
 @media (max-width: 767px) {
@@ -4753,8 +4745,7 @@ h4 {
 }
 
 .footer__btn img {
-  width: 44px;
-  margin-right: 20px;
+  width: 100%;
 }
 
 .footer__logo {
@@ -4837,10 +4828,11 @@ h4 {
   }
   .footer__btn {
     height: 63px;
+    width: 212px;
     margin-top: 25px;
-    padding-left: 26px;
-    padding-right: 26px;
-    font-size: 24px;
+  }
+  .footer__btn img.only-tablet {
+    display: none;
   }
   .footer__logos {
     margin-top: 32px;
@@ -4921,8 +4913,11 @@ h4 {
   .footer__btn {
     margin-top: 32px;
     margin-bottom: 32px;
-    height: 81px;
-    width: 313px;
+    height: 80px;
+    width: 331px;
+  }
+  .footer__btn img:not(.only-tablet) {
+    display: none;
   }
   .footer__logo {
     width: 202px;
@@ -4981,6 +4976,9 @@ h4 {
     margin-top: 34px;
     padding-left: 40px;
     padding-right: 40px;
+  }
+  .footer__btn img.only-tablet {
+    display: none;
   }
   .footer__logos {
     margin-top: 18px;
