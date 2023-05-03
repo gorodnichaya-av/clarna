@@ -214,17 +214,19 @@ $(function () {
       let dataPayment = $(this).attr('data-payment');
       if(dataPayment) {
         $('.js-pricing-payment, .js-pricing-hidden-text').show(0);
+        $('.js-pricing-total').each(function() {
+          let newTotalVal = $(this).attr('data-price');
+          newTotalVal = dollarUSLocale.format(newTotalVal*0.9);
+  
+          $(this).html(`${newTotalVal}.-`);
+        });
       } else {
         $('.js-pricing-payment, .js-pricing-hidden-text').hide(0);
+        $('.js-pricing-total').each(function() {
+          let dataPrice = $(this).attr('data-price');
+          $(this).html(`${dataPrice}.-`);
+        });
       }
-
-      $('.js-pricing-total').each(function() {
-        let newTotalVal = ($(this).html()).match(/\d+/g).join("");
-        newTotalVal = dollarUSLocale.format(newTotalVal*0.9);
-
-        $(this).html(`${newTotalVal}.-`);
-      });
-
     });
 
     // Accordion
@@ -256,12 +258,15 @@ $(function () {
     $('.js-modal-close').on('click', function(e) {
       $(this).closest('.js-modal').fadeOut();
       $('body').css({
-        'overflow': ' '
+        'overflow': 'unset'
       });
     });
     $(document).on('click',function(e){
       if(!(($(e.target).closest('.js-modal-content').length > 0 ) || ($(e.target).closest(".js-modal-btn").length > 0))){
         $(".js-modal").fadeOut();
+        $('body').css({
+          'overflow': 'unset'
+        });
        }
     });
 

@@ -61,10 +61,6 @@
   
             <div class="try-free">
               <a href="#pricing" class="btn btn--triangle js-scroll-to">ทดลองใช้ตอนนี้</a>
-              <small>
-                <span>Sale: สั่งซื้อได้ 24 ชม.</span>
-                <span>Stock: เหลือ 58 กระปุก</span>
-              </small>
             </div><!-- /.try-free -->
           </div>
         </div><!-- /.container -->
@@ -1690,7 +1686,7 @@
               <div class="text-center">
                 <div class="pricing__promotion">โปรโมชั่นพิเศษวันนี้</div>
 
-                <div class="text-pink pricing__total js-pricing-total">1980</div>
+                <div class="text-pink pricing__total js-pricing-total" data-price="1980">1980</div>
                 <div class="text-lg js-pricing-hidden-text">ราคาสมาชิกรายเดือน</div>
   
                 <div class="text-green">ประหยัด 1,980 ฿</div>
@@ -1764,7 +1760,7 @@
               <div class="text-center">
                 <div class="pricing__promotion">โปรโมชั่นพิเศษวันนี้</div>
 
-                <div class="text-pink pricing__total js-pricing-total">3960</div>
+                <div class="text-pink pricing__total js-pricing-total" data-price="3960">3960</div>
                 <div class="text-lg js-pricing-hidden-text">ราคาสมาชิกรายเดือน</div>
 
                 <div class="text-green">ประหยัด 4,480 ฿</div>
@@ -1820,7 +1816,7 @@
               <div class="text-center">
                 <div class="pricing__promotion">โปรโมชั่นพิเศษวันนี้</div>
 
-                <div class="text-pink pricing__total js-pricing-total">990</div>
+                <div class="text-pink pricing__total js-pricing-total" data-price="990">990</div>
                 <div class="text-lg js-pricing-hidden-text">ราคาสมาชิกรายเดือน</div>
   
                 <div class="text-green">Save 640 ฿</div>
@@ -1979,7 +1975,7 @@
       </div>
 
       <div class="try-free try-free--sticky mobile-visible js-sticky-btn">
-        <a href="#package" class="btn btn--triangle js-scroll-to">ทดลองใช้ตอนนี้</a>
+        <a href="#pricing" class="btn btn--triangle js-scroll-to">ทดลองใช้ตอนนี้</a>
       </div><!-- /.try-free -->
 
     </div><!-- /.wrap -->
@@ -1990,11 +1986,11 @@
         <div class="footer__navs">
           <a href="#" class="js-modal-btn" data-modal="#terms">นโยบาย</a>
           |
-          <a href="#">ความเป็นส่วนตัว</a>
+          <a href="#" class="js-modal-btn" data-modal="#privacy">ความเป็นส่วนตัว</a>
           |
-          <a href="#">การจัดส่ง</a>
+          <a href="#" class="js-modal-btn" data-modal="#shipping">การจัดส่ง</a>
           |
-          <a href="#">ติดต่อเรา</a>
+          <a href="#" class="js-modal-btn" data-modal="#contact">ติดต่อเรา</a> 
         </div>
         <a class="footer__btn" href="#">
           <img src="img/Footer/line.png" srcset="img/Footer/line@2x.png 2x, img/Footer/line@3x.png 3x" alt="">
@@ -2031,6 +2027,102 @@
         </div><!-- /.container -->
       </div><!-- /.copy -->
     </footer>
+
+    <div id="terms" class="modal js-modal">
+      <div class="modal__overlay">
+        <div class="modal__content js-modal-content">
+          <span class="modal__close js-modal-close">&times;</span>
+          <h4 class="text-pink text-bold">Terms</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Debitis laborum consequatur officiis! Voluptate facere consequatur 
+            iure. Culpa eaque laboriosam illum esse eligendi, quam aperiam a, 
+            tempore, labore ipsum repudiandae? Praesentium.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Debitis laborum consequatur officiis! Voluptate facere consequatur 
+            iure. Culpa eaque laboriosam illum esse eligendi, quam aperiam a, 
+            tempore, labore ipsum repudiandae? Praesentium.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Debitis laborum consequatur officiis! Voluptate facere consequatur 
+            iure. Culpa eaque laboriosam illum esse eligendi, quam aperiam a, 
+            tempore, labore ipsum repudiandae? Praesentium.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Debitis laborum consequatur officiis! Voluptate facere consequatur 
+            iure. Culpa eaque laboriosam illum esse eligendi, quam aperiam a, 
+            tempore, labore ipsum repudiandae? Praesentium.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="privacy" class="modal js-modal">
+      <div class="modal__overlay">
+        <div class="modal__content js-modal-content">
+          <span class="modal__close js-modal-close">&times;</span>
+          <h4 class="text-pink text-bold">Privacy</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Debitis laborum consequatur officiis! Voluptate facere consequatur 
+            iure. Culpa eaque laboriosam illum esse eligendi, quam aperiam a, 
+            tempore, labore ipsum repudiandae? Praesentium.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Debitis laborum consequatur officiis! Voluptate facere consequatur 
+            iure. Culpa eaque laboriosam illum esse eligendi, quam aperiam a, 
+            tempore, labore ipsum repudiandae? Praesentium.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="shipping" class="modal js-modal">
+      <div class="modal__overlay">
+        <div class="modal__content js-modal-content">
+          <span class="modal__close js-modal-close">&times;</span>
+          <h4 class="text-pink text-bold">Shipping</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Debitis laborum consequatur officiis! Voluptate facere consequatur 
+            iure. Culpa eaque laboriosam illum esse eligendi, quam aperiam a, 
+            tempore, labore ipsum repudiandae? Praesentium.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Debitis laborum consequatur officiis! Voluptate facere consequatur 
+            iure. Culpa eaque laboriosam illum esse eligendi, quam aperiam a, 
+            tempore, labore ipsum repudiandae? Praesentium.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="modal js-modal">
+      <div class="modal__overlay">
+        <div class="modal__content js-modal-content">
+          <span class="modal__close js-modal-close">&times;</span>
+          <h4 class="text-pink text-bold">Contact</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Debitis laborum consequatur officiis! Voluptate facere consequatur 
+            iure. Culpa eaque laboriosam illum esse eligendi, quam aperiam a, 
+            tempore, labore ipsum repudiandae? Praesentium.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Debitis laborum consequatur officiis! Voluptate facere consequatur 
+            iure. Culpa eaque laboriosam illum esse eligendi, quam aperiam a, 
+            tempore, labore ipsum repudiandae? Praesentium.
+          </p>
+        </div>
+      </div>
+    </div>
 
     <div id="terms" class="modal js-modal">
       <div class="modal__overlay">

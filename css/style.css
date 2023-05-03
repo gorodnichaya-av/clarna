@@ -1300,6 +1300,9 @@ h4 {
     margin-left: -20px;
     margin-right: -20px;
   }
+  .banner__info--no-border {
+    border-radius: 0;
+  }
   .banner__info .text-pink {
     color: #fff;
   }
@@ -1381,6 +1384,7 @@ h4 {
   .banner__slider {
     margin-left: -20px;
     margin-right: -20px;
+    margin-bottom: 0;
   }
   .banner__slider-nav {
     padding-left: 5px;
@@ -3460,7 +3464,10 @@ h4 {
 }
 
 .under-introducing {
+  position: relative;
   overflow: hidden;
+  height: 72px;
+  width: 100%;
 }
 
 .under-introducing:hover .check-line {
@@ -3469,19 +3476,18 @@ h4 {
 }
 
 .check-line {
-  position: relative;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  top: 0;
+  left: 0;
   -webkit-animation: 20s horizontalScroll linear infinite;
           animation: 20s horizontalScroll linear infinite;
 }
@@ -3489,6 +3495,12 @@ h4 {
 .check-line__item {
   white-space: nowrap;
   background: url(../img/Icons/checkmark.svg) no-repeat 0 50%;
+}
+
+.check-line--second {
+  left: 100%;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
 }
 
 @media (max-width: 1280px) {
@@ -3667,7 +3679,7 @@ h4 {
 }
 
 .guarantee-logos h5 {
-  font-family: "IBMPlexSansThai-Bold", sans-serif;
+  font-weight: 500;
   color: #E12058;
 }
 
@@ -3835,6 +3847,7 @@ h4 {
             transform: scale(0.72);
   }
   .guarantee-logos__logo h5 {
+    font-family: "IBMPlexSansThai-Bold", sans-serif;
     margin-top: -15px;
     font-size: 22px;
     line-height: 1.2;
@@ -4274,9 +4287,9 @@ h4 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 60px;
-  height: 60px;
-  font-size: 17px;
+  width: 45px;
+  height: 45px;
+  font-size: 14px;
   z-index: 2;
 }
 
@@ -4289,8 +4302,8 @@ h4 {
 }
 
 .pricing__counting {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 26px;
+  padding-right: 26px;
   display: inline-block;
   width: 100%;
 }
@@ -4378,6 +4391,10 @@ h4 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background: url(../img/Pricing/checkmark.svg) no-repeat 0 50%/14px auto;
+}
+
+.pricing__count-line span:last-child {
+  white-space: nowrap;
 }
 
 .pricing__count-total {
@@ -4604,9 +4621,20 @@ h4 {
   .pricing-payment img {
     height: 45px;
   }
+  .pricing__count-line {
+    line-height: 1.2;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+  .pricing__count-line span:first-child {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 992px) {
+  .pricing__item:nth-child(2) {
+    min-width: 34%;
+  }
   .pricing-payment {
     font-size: 24px;
   }
@@ -4821,8 +4849,6 @@ h4 {
 .accordion__title {
   position: relative;
   cursor: pointer;
-  font-weight: 600;
-  font-family: "IBMPlexSansThai-SemiBold", sans-serif;
 }
 
 .accordion__title:after {
@@ -4885,6 +4911,8 @@ h4 {
   .accordion__title {
     padding: 15px 60px 15px 20px;
     font-size: 20px;
+    font-weight: 600;
+    font-family: "IBMPlexSansThai-SemiBold", sans-serif;
   }
   .accordion__title:after {
     right: 30px;
@@ -5361,6 +5389,7 @@ h4 {
   background-color: #fff;
   max-width: 800px;
   max-height: 900px;
+  overflow: auto;
 }
 
 @media (max-width: 767px) {
@@ -5390,6 +5419,16 @@ h4 {
 
 .modal p {
   margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+  .modal__content {
+    width: 90vw;
+    height: 90vh;
+  }
+  .modal__content h4 {
+    font-size: 24px;
+  }
 }
 
 /***** visibility *****/
