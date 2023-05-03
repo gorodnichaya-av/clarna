@@ -1830,14 +1830,14 @@ h4 {
 
 /***** slick slider / ingredients-slider / testimonials-slider ******/
 .slick-slider .slick-dots {
-  margin-top: 30px;
+  margin-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 14px;
+  gap: 11px;
 }
 
 .slick-slider .slick-dots li {
@@ -1850,8 +1850,8 @@ h4 {
 
 .slick-slider .slick-dots button {
   overflow: hidden;
-  width: 21px;
-  height: 21px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   text-indent: -99999px;
   background-color: #E4E4E4;

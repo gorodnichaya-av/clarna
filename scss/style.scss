@@ -1745,10 +1745,10 @@ h4 {
 /***** slick slider / ingredients-slider / testimonials-slider ******/
 .slick-slider {
   .slick-dots {
-    margin-top: 30px;
+    margin-top: 15px;
     display: flex;
     justify-content: center;
-    gap: 14px;
+    gap: 11px;
     li {
       list-style-type: none;
       &.slick-active {
@@ -1759,8 +1759,8 @@ h4 {
     }
     button {
       overflow: hidden;
-      width: 21px;
-      height: 21px;
+      width: 16px;
+      height: 16px;
       border-radius: 50%;
       text-indent: -99999px;
       background-color: #E4E4E4;
