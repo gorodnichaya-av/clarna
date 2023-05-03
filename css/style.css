@@ -3016,6 +3016,7 @@ h4 {
           align-items: center;
   position: relative;
   color: #fff;
+  background-color: #FF6483;
   background: url(../img/Ingredients/doctor-bg.svg) no-repeat 0 50%/cover;
   text-align: center;
 }
