@@ -1004,7 +1004,7 @@ h4 {
 }
 @media (min-width: 1281px) {
   .wrap {
-    padding-top: 100px;
+    padding-top: 70px;
   }
   .topbar {
     height: 40px;
@@ -1012,29 +1012,30 @@ h4 {
   }
   .header {
     &__navbar {
-      padding-top: 20px;
-      padding-bottom: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
   }
   .fixed-navbar {
-    top: -100px;
-    margin-top: 140px;
+    top: -70px;
+    margin-top: 110px;
   }
   .logo {
-    width: 179px;
+    width: 130px;
     margin-top: -8px;
   }
   .navbar {
     li {
       padding-left: 15px;
+      font-size: 18px;
       &:not(:last-child) {
         padding-right: 15px;
       }
     }
     .btn {
-      height: 60px;
-      padding-left: 40px;
-      padding-right: 40px;
+      height: 50px;
+      padding-left: 30px;
+      padding-right: 30px;
     }
   }
 }
@@ -1051,6 +1052,12 @@ h4 {
     right: 0;
     background-color: #FFDFE2;
   }
+  &--slider {
+    background-color: #F6E9EA;
+    &:before {
+      display: none;
+    }
+  }
   &__info {
     position: relative;
     display: flex;
@@ -1058,16 +1065,21 @@ h4 {
     padding: 10px 15px;
     background: radial-gradient(circle, rgba(247,198,203,1) 0%, rgba(247,198,203,0) 100%);
     line-height: 1.2;
-    &:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      border-top: 3px solid $pink;
-      border-bottom: 3px solid $pink;
+    &--no-border {
+      background: #FFDFE2;
+      border-radius: 10px;
     }
-    
+    &:not(.banner__info--no-border) {
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        border-top: 3px solid $pink;
+        border-bottom: 3px solid $pink;
+      }
+    }   
     img {
       margin-right: 13px;
     }
@@ -1399,7 +1411,7 @@ h4 {
     &--slider {
       padding-top: 0;
       padding-bottom: 78px;
-      margin-bottom: 0;
+      margin-bottom: 20px;
       &:before {
         bottom: 0;
       }
@@ -1435,6 +1447,9 @@ h4 {
           padding-bottom: 300px;
         }
       }
+    }
+    &__womans {
+      width: 632px;
     }
     &__roses {
       width: calc(100% + 350px);

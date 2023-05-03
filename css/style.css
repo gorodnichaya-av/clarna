@@ -1035,34 +1035,35 @@ h4 {
 
 @media (min-width: 1281px) {
   .wrap {
-    padding-top: 100px;
+    padding-top: 70px;
   }
   .topbar {
     height: 40px;
     font-size: 16px;
   }
   .header__navbar {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .fixed-navbar {
-    top: -100px;
-    margin-top: 140px;
+    top: -70px;
+    margin-top: 110px;
   }
   .logo {
-    width: 179px;
+    width: 130px;
     margin-top: -8px;
   }
   .navbar li {
     padding-left: 15px;
+    font-size: 18px;
   }
   .navbar li:not(:last-child) {
     padding-right: 15px;
   }
   .navbar .btn {
-    height: 60px;
-    padding-left: 40px;
-    padding-right: 40px;
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -1081,6 +1082,14 @@ h4 {
   background-color: #FFDFE2;
 }
 
+.banner--slider {
+  background-color: #F6E9EA;
+}
+
+.banner--slider:before {
+  display: none;
+}
+
 .banner__info {
   position: relative;
   display: -webkit-box;
@@ -1094,7 +1103,12 @@ h4 {
   line-height: 1.2;
 }
 
-.banner__info:before {
+.banner__info--no-border {
+  background: #FFDFE2;
+  border-radius: 10px;
+}
+
+.banner__info:not(.banner__info--no-border):before {
   content: "";
   position: absolute;
   top: 0;
@@ -1464,7 +1478,7 @@ h4 {
   .banner--slider {
     padding-top: 0;
     padding-bottom: 78px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
   .banner--slider:before {
     bottom: 0;
@@ -1504,6 +1518,9 @@ h4 {
   }
   .banner__woman-wrap--collage {
     padding-bottom: 300px;
+  }
+  .banner__womans {
+    width: 632px;
   }
   .banner__roses {
     width: calc(100% + 350px);
