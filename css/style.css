@@ -4037,8 +4037,9 @@ h4 {
 }
 
 .pricing__total {
-  font-weight: 700;
   line-height: 1.2;
+  font-weight: 700;
+  font-family: "IBMPlexSansThai-Bold", sans-serif;
 }
 
 .pricing__promotion {
@@ -4122,6 +4123,12 @@ h4 {
   color: #02AD5E;
   font-family: "IBMPlexSansThai-SemiBold", sans-serif;
   font-weight: 600;
+}
+
+.pricing .text-lg {
+  font-size: 1em;
+  font-family: "IBMPlexSansThai-Medium", sans-serif;
+  font-weight: 500;
 }
 
 .pricing-info {
@@ -4428,17 +4435,18 @@ h4 {
     max-height: 150px;
   }
   .pricing__icon {
-    width: 18px;
+    width: 16px;
   }
   .pricing__shipping {
-    font-size: 24px;
-    margin-bottom: 35px;
+    font-size: 20px;
+    margin-bottom: 25px;
   }
   .pricing__count {
     font-size: 18px;
   }
   .pricing__total {
-    font-size: 60px;
+    font-size: 48px;
+    margin-top: 20px;
   }
   .pricing__promotion {
     margin-top: 32px;
@@ -4459,18 +4467,18 @@ h4 {
   }
   .pricing .text-green {
     margin-top: 14px;
-    font-size: 36px;
+    font-size: 32px;
   }
   .pricing .btn {
-    height: 85px;
+    height: 75px;
     font-size: 36px;
   }
   .pricing-info {
-    margin-top: 66px;
+    margin-top: 30px;
   }
   .pricing-info img {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    -webkit-transform: scale(0.72);
+            transform: scale(0.72);
   }
 }
 

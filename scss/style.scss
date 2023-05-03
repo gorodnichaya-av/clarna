@@ -3632,8 +3632,9 @@ h4 {
     }
   }
   &__total {
-    font-weight: 700;
     line-height: 1.2;
+    font-weight: 700;
+    font-family: "IBMPlexSansThai-Bold", sans-serif;
   }
   &__promotion {
     display: inline-flex;
@@ -3691,6 +3692,11 @@ h4 {
     color: #02AD5E;
     font-family: "IBMPlexSansThai-SemiBold", sans-serif;
     font-weight: 600;
+  }
+  .text-lg {
+    font-size: 1em;
+    font-family: "IBMPlexSansThai-Medium", sans-serif;
+    font-weight: 500;
   }
 }
 
@@ -3987,17 +3993,18 @@ h4 {
       }
     }
     &__icon {
-      width: 18px;
+      width: 16px;
     }
     &__shipping {
-      font-size: 24px;
-      margin-bottom: 35px;
+      font-size: 20px;
+      margin-bottom: 25px;
     }
     &__count {
       font-size: 18px;
     }
     &__total {
-      font-size: 60px;
+      font-size: 48px;
+      margin-top: 20px;
     }
     &__promotion {
       margin-top: 32px;
@@ -4020,17 +4027,17 @@ h4 {
     }
     .text-green {
       margin-top: 14px;
-      font-size: 36px;
+      font-size: 32px;
     }
     .btn {
-      height: 85px;
+      height: 75px;
       font-size: 36px;
     }
   }
   .pricing-info {
-    margin-top: 66px;
+    margin-top: 30px;
     img {
-      transform: scale(0.8);
+      transform: scale(0.72);
     }
   }
 }
