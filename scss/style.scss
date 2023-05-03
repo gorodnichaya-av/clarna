@@ -4537,6 +4537,7 @@ h4 {
       font-size: 21px;
       gap: 40px;
       &__item {
+        flex: unset;
         img {
           transform: scale(0.72);
           margin-right: 5px;
