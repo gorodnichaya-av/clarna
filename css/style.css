@@ -3465,9 +3465,9 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -3525,6 +3525,8 @@ h4 {
   .check-line__item {
     padding-left: 32px;
     background-size: 22px auto;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
 
@@ -3595,7 +3597,8 @@ h4 {
     margin-bottom: 75px;
   }
   .symptom__title {
-    font-size: 30px;
+    font-size: 24px;
+    font-weight: 500;
   }
 }
 

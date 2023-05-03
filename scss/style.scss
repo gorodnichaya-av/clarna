@@ -3233,7 +3233,7 @@ h4 {
 .check-line {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   transition: all 0.3s;
@@ -3283,6 +3283,8 @@ h4 {
     &__item {
       padding-left: 32px;
       background-size: 22px auto;
+      margin-left: 50px;
+      margin-right: 50px;
     }
   }
 }
@@ -3337,7 +3339,8 @@ h4 {
   }
   .symptom {
     &__title {
-      font-size: 30px;
+      font-size: 24px;
+      font-weight: 500;
     }
   }
 }
