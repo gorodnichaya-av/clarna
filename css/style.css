@@ -2287,6 +2287,11 @@ h4 {
         -ms-flex-align: end;
             align-items: flex-end;
   }
+  .ingredients-section .inline__item {
+    -webkit-box-flex: unset;
+        -ms-flex: unset;
+            flex: unset;
+  }
   .ingredients-section .inline img {
     -webkit-transform: scale(0.75);
             transform: scale(0.75);

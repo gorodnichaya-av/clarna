@@ -2174,6 +2174,9 @@ h4 {
       margin-top: 28px;
       margin-bottom: 70px;
       align-items: flex-end;
+      &__item {
+        flex: unset;
+      }
       img {
         transform: scale(0.75);
       }
