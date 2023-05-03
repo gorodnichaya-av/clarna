@@ -452,6 +452,11 @@ img {
   }
 }
 @media (min-width: 768px) {
+  .try-free {
+    &--sticky.mobile-visible {
+      display: none !important;
+    }
+  }
   .btn {
     &--white-grey {
       border-radius: 10px;
@@ -3978,6 +3983,10 @@ h4 {
     &__img {
       height: 150px;
       margin-top: 20px;
+      img {
+        max-height: 139px;
+        width: auto;
+      }
     }
     &__gifts {
       gap: 8px;

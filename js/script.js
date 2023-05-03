@@ -7,8 +7,6 @@ $(function () {
             stickyHeight = sticky.height() + 50,
             scroll = $(window).scrollTop();
 
-      console.log(scroll, stickyHeight);
-
       if (scroll > stickyHeight) {
         sticky.addClass('fixed')
       } else {
@@ -24,6 +22,19 @@ $(function () {
         sticky.removeClass('transition');
       }
       lastScrollTop = scroll;
+
+
+      // Hide sticky footer CTA on pricing
+      const pricingSection = $('.pricing'),
+            pricingSectionStartScroll = pricingSection.offset().top,
+            pricingSectionEndScroll = pricingSection.outerHeight(true, true) + pricingSectionStartScroll - 100; 
+
+      if(scroll > pricingSectionStartScroll && scroll < pricingSectionEndScroll) {
+        $('.js-sticky-btn').fadeOut();
+      } else {
+        $('.js-sticky-btn').fadeIn();
+      }
+
     });
 
 
@@ -167,14 +178,6 @@ $(function () {
 
     addHeightPticingList($('.js-pricing-count'));
 
-    // Add the same height for "inline" icons
-
-    /*$('.inline').each(function() {
-      const inlineElem = $(this).find('.inline__icon');
-      addHeightPticingList(inlineElem);
-    }); */
-    
-
     // Premium scare height
     function addPremiumScareHeight() {
       const premiumScareHeight = $('.js-premium-scare-height').outerHeight(true),
@@ -192,11 +195,6 @@ $(function () {
     $(window).resize(function() {
       addPremiumScareHeight();
       addHeightPticingList($('.js-pricing-count'));
-
-      /*$('.inline').each(function() {
-        const inlineElem = $(this).find('.inline__icon');
-        addHeightPticingList(inlineElem);
-      }); */
     });
 
     // Payment discount
