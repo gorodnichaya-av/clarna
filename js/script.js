@@ -1,21 +1,29 @@
 $(function () {
   $(document).ready(function(){
-    // Mobile hide topbar on scroll 
+    // Headerr fixed
     var lastScrollTop = 0;
     $(window).scroll(function(){
-        let sticky = $('.topbar'),
-            scroll = $(window).scrollTop(),
-            windowWidth = $(window).width();
+        let sticky = $('.fixed-navbar'),
+            stickyHeight = sticky.height() + 50,
+            scroll = $(window).scrollTop();
 
-      if (windowWidth < 768) {
-        if (scroll > 37){
-          sticky.slideUp(200);
-        } else {
-          sticky.slideDown(200);
-        }
+      console.log(scroll, stickyHeight);
+
+      if (scroll > stickyHeight) {
+        sticky.addClass('fixed')
       } else {
-        sticky.show(0);
+        sticky.removeClass('fixed')
+        $('.js-menu a').each(function () {
+          $(this).removeClass('active');
+        });
       }
+
+      if (scroll > lastScrollTop){
+        sticky.addClass('transition');
+      } else {
+        sticky.removeClass('transition');
+      }
+      lastScrollTop = scroll;
     });
 
 
@@ -113,10 +121,12 @@ $(function () {
     });
 
     $('.js-ingredients-slider').slick({
-      slidesToShow: 4,
+      centerMode: true,
+      slidesToShow: 5,
       arrows: false,
       dots: true,
       infinite: true,
+      variableWidth: true,
       responsive: [
         {
           centerMode: true,
@@ -158,10 +168,10 @@ $(function () {
 
     // Add the same height for "inline" icons
 
-    $('.inline').each(function() {
+    /*$('.inline').each(function() {
       const inlineElem = $(this).find('.inline__icon');
       addHeightPticingList(inlineElem);
-    }); 
+    }); */
     
 
     // Premium scare height
@@ -200,6 +210,8 @@ $(function () {
     $('.js-pricing-btn').on('click', function(e) {
       e.preventDefault();
 
+      $('.js-pricing-btn').removeClass('active');
+      $(this).addClass('active');
       let dataPayment = $(this).attr('data-payment');
       if(dataPayment) {
         $('.js-pricing-payment, .js-pricing-hidden-text').show(0);
