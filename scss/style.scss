@@ -623,7 +623,10 @@ a {
   font-size: 1.2em;
   font-family: "IBMPlexSansThai-Regular", sans-serif;
   font-weight: 400;
-
+}
+.text-sm {
+  font-family: "IBMPlexSansThai-Regular", sans-serif;
+  font-weight: 400;
 }
 
 h1,
@@ -665,11 +668,12 @@ h4 {
   .mobile-text-lg {
     font-size: 20px;
   }
-  h1,
+  h1 {
+    font-size: 27px;
+  }
   h2 {
     font-size: 25px;
   }
-  .text-sm,
   .text-md,
   .text-lg {
     font-size: 1.15em;
@@ -1254,7 +1258,6 @@ h4 {
     padding-top: 27px;
     padding-bottom: 27px;
     &--slider {
-      padding-top: 0;
       .banner__text {
         padding-top: 27px;
       }
