@@ -1204,6 +1204,9 @@ h4 {
     h1 {
       text-align: center;
     }
+    .rating {
+      justify-content: center;
+    }
     .row {
       flex-direction: column;
     }
@@ -1472,6 +1475,9 @@ h4 {
       &--desktop-reverse {
         flex-direction: row-reverse;
       }
+    }
+    .rating__value {
+      font-size: 20px;
     }
     h1 {
       margin-left: 0;
