@@ -4,57 +4,42 @@
 @font-face {
   font-family: "IBMPlexSansThai-Bold";
   src: url("../fonts/IBMPlexSansThai-Bold.woff2") format("woff2"), 
-       url("../fonts/IBMPlexSansThai-Bold.woff")
-       format("woff");
-}
-
-@font-face {
-  font-family: "IBMPlexSansThai-ExtraLight";
-  src: url("../fonts/IBMPlexSansThai-ExtraLight.woff2") format("woff2"), 
-       url("../fonts/IBMPlexSansThai-ExtraLight.woff")
-       format("woff");
-} 
-
-@font-face {
-  font-family: "IBMPlexSansThai-Light";
-  src: url("../fonts/IBMPlexSansThai-Light.woff2") format("woff2"), 
-       url("../fonts/IBMPlexSansThai-Light.woff")
-       format("woff");
+       url("../fonts/IBMPlexSansThai-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "IBMPlexSansThai-Medium";
   src: url("../fonts/IBMPlexSansThai-Medium.woff2") format("woff2"), 
-       url("../fonts/IBMPlexSansThai-Medium.woff")
-       format("woff");
+       url("../fonts/IBMPlexSansThai-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "IBMPlexSansThai-Regular";
   src: url("../fonts/IBMPlexSansThai-Regular.woff2") format("woff2"), 
-       url("../fonts/IBMPlexSansThai-Regular.woff")
-       format("woff");
+       url("../fonts/IBMPlexSansThai-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "IBMPlexSansThai-SemiBold";
   src: url("../fonts/IBMPlexSansThai-SemiBold.woff2") format("woff2"), 
-       url("../fonts/IBMPlexSansThai-SemiBold.woff")
-       format("woff");
-}
-
-@font-face {
-  font-family: "IBMPlexSansThai-Thin";
-  src: url("../fonts/IBMPlexSansThai-Thin.woff2") format("woff2"), 
-       url("../fonts/IBMPlexSansThai-Thin.woff")
-       format("woff");
+       url("../fonts/IBMPlexSansThai-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "FCIconic-Bold";
   src: url("../fonts/FCIconic-Bold.woff2") format("woff2"), 
-       url("../fonts/FCIconic-Bold.woff")
-       format("woff");
+       url("../fonts/FCIconic-Bold.woff") format("woff"),
+       url('../fonts/FCIconic-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
 }
 
 
@@ -632,7 +617,7 @@ a {
 
 h1,
 h2 {
-  font-family: "IBMPlexSansThai-Bold", sans-serif;
+  font-family: "FCIconic-Bold", sans-serif;
   color: $pink;
   font-weight: 700;
 }
@@ -651,6 +636,7 @@ h4 {
   font-family: "IBMPlexSansThai-Regular", sans-serif;
   font-weight: 400;
 }
+
 @media (max-width: 991px) {
   h1,
   h2 {
@@ -678,22 +664,6 @@ h4 {
   .text-lg {
     font-size: 1.15em;
   }
-  /*.text-md {
-    font-size: 15px;
-  }*/
-  /*.text-lg {
-    font-size: 18px;
-  }*/
-}
-@media (min-width: 768px) {
-  /*.text-md {
-    font-size: 22px;
-  }*/
-}
-@media (min-width: 768px) and (max-width: 1280px) {
-  /*.text-lg {
-    font-size: 25px;
-  }*/
 }
 @media (min-width: 992px) and (max-width: 1280px) {
   h1,
@@ -709,10 +679,6 @@ h4 {
   }
 }
 @media (min-width: 1281px) {
-  h1,
-  h2 {
-    font-family: "FCIconic-Bold", sans-serif;
-  }
   h1 {
     font-size: 45px;
   }
@@ -728,9 +694,6 @@ h4 {
   }
 }
 @media (min-width: 1281px) {
-  /*.text-lg {
-    font-size: 30px;
-  }*/
   .text-sm {
     font-size: 0.9em;
   }
@@ -3186,46 +3149,6 @@ h4 {
     }
   }
 }
-
-/*@media (min-width: 1281px) and (max-width: 1639px) {
-  .ingredients {
-    padding-top: 300px;
-    &__clarna {
-      width: 80%;
-    }
-    &__item {
-      img {
-        width: 250px;
-      }
-      &:nth-child(3),
-      &:nth-child(4) {
-        top: 150px;
-      }
-      &:nth-child(5),
-      &:nth-child(6) {
-        bottom: 240px;
-      }
-    }
-    &__name {
-      font-size: 20px;
-    }
-  }
-}
-@media (min-width: 1640px) {
-  .ingredients {
-    padding-top: 430px;
-    &__item {
-      &:nth-child(3),
-      &:nth-child(4) {
-        top: 250px;
-      }
-      &:nth-child(5),
-      &:nth-child(6) {
-        bottom: 325px;
-      }
-    }
-  }
-}*/
 
 /***** check-line *****/
 
