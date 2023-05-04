@@ -51,6 +51,7 @@ body {
   overflow-x: hidden;
   color: #101010;
   font-family: "IBMPlexSansThai-Medium", sans-serif;
+  background-color: #ffffff;
 }
 
 @media (max-width: 767px) {
@@ -3442,71 +3443,44 @@ h4 {
   }
 }*/
 /***** check-line *****/
-@-webkit-keyframes horizontalScroll {
-  0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
-  100% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-}
-@keyframes horizontalScroll {
-  0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
-  100% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-}
-
 .under-introducing {
   position: relative;
   overflow: hidden;
-  height: 72px;
   width: 100%;
 }
 
-.under-introducing:hover .check-line {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-}
-
 .check-line {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  position: relative;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: unset;
+}
+
+.check-line.cloned {
+  position: absolute;
   top: 0;
   left: 0;
-  -webkit-animation: 20s horizontalScroll linear infinite;
-          animation: 20s horizontalScroll linear infinite;
 }
 
 .check-line__item {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   white-space: nowrap;
   background: url(../img/Icons/checkmark.svg) no-repeat 0 50%;
-}
-
-.check-line--second {
-  left: 100%;
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
 }
 
 @media (max-width: 1280px) {
   .check-line__item {
     padding-left: 27px;
-    padding-right: 27px;
   }
 }
 
@@ -3517,7 +3491,6 @@ h4 {
   }
   .check-line__item {
     padding-left: 25px;
-    padding-right: 25px;
     margin-left: 20px;
     margin-right: 20px;
     background-size: 18px auto;

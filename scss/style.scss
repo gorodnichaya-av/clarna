@@ -74,6 +74,7 @@ body {
   overflow-x: hidden;
   color: #101010;
   font-family: "IBMPlexSansThai-Medium", sans-serif;
+  background-color: #ffffff;
 }
 @media (max-width: 767px) {
   body {
@@ -3224,47 +3225,36 @@ h4 {
 }*/
 
 /***** check-line *****/
-@keyframes horizontalScroll {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
+
 .under-introducing {
   position: relative;
   overflow: hidden;
-  height: 72px;
   width: 100%;
-  &:hover {
-    .check-line {
-      animation-play-state: paused;
-    }
-  }
 }
 .check-line {
-  position: absolute;
   display: flex;
-  justify-content: space-between;
+  position: relative;
+  justify-content: space-around;
   align-items: center;
-  top: 0;
-  left: 0;
-  animation: 20s horizontalScroll linear infinite;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: unset;
+  &.cloned {
+    position:absolute;
+    top:0;
+    left:0;
+  }
   &__item {
+    flex-shrink: 0;
     white-space: nowrap;
     background: url(../img/Icons/checkmark.svg) no-repeat 0 50%;
-  }
-  &--second {
-    left: 100%;
-    animation-delay: 10s;
   }
 }
 @media (max-width: 1280px) {
   .check-line {
     &__item {
       padding-left: 27px;
-      padding-right: 27px;
     }
   }
 }
@@ -3274,7 +3264,6 @@ h4 {
     font-size: 21px;
     &__item {
       padding-left: 25px;
-      padding-right: 25px;
       margin-left: 20px;
       margin-right: 20px;
       background-size: 18px auto;
