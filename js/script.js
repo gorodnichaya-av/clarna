@@ -251,7 +251,7 @@ $(function () {
     clonedList.addClass("cloned").appendTo(holder);
     //TimelineMax
     var infinite = new TimelineMax({repeat: -1, paused: false});
-    var time = 5;
+    var time = 15;
     infinite.fromTo(list, time, {left:0}, {left: -listWidth, ease: Linear.easeNone}, 0);
     infinite.fromTo(clonedList, time, {left:listWidth}, {left:0, ease: Linear.easeNone}, 0);
     infinite.set(list, {left: listWidth});
